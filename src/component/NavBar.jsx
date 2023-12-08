@@ -1,6 +1,7 @@
 import { FaBarsStaggered } from "react-icons/fa6";
 import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import { menus } from "../utils/data";
 const themes = {
     cupcake: 'cupcake',
     synthwave:'synthwave'
@@ -25,14 +26,20 @@ const NavBar = () => {
 
   return (
     <section className=" bg-base-300 ">
-      <nav className="navbar align-element items-center">
+      <nav className="navbar align-element ">
         <div className="navbar-start ">
-          <h3 className="text-2xl tracking-wider font-bold capitalize">
+          <h3 className="text-2xl tracking-wider font-bold  text-slant capitalize">
             vtech
-            <span className="text-primary font-normal drawer-button">wise</span>
+            <span className="text-primary font-normal">wise</span>
           </h3>
         </div>
-        <div className="navbar-center"></div>
+        <div className="navbar-center hidden lg:!flex">
+          <div className="menu  menu-horizontal gap-x-4">
+            {menus.map((menu) => {
+              return <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
+            })}
+          </div>
+        </div>
         <div className="navbar-end">
           <label className="swap swap-rotate">
             <input type="checkbox" onChange={toggleTheme} />
@@ -44,7 +51,7 @@ const NavBar = () => {
           </label>
         </div>
       </nav>
-      ;
+      {/* // ; */}
     </section>
   );
 };
