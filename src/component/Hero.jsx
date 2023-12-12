@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-5xl tracking-wide font-semibold">
+        <h1 className="text-4xl md:text-5xl tracking-wide font-semibold">
           I craft beautiful and unique products.
         </h1>
         <p className="mt-4 leading-8">
