@@ -10,7 +10,7 @@ const HomeLayout = () => {
       <input type="checkbox" id="my-drawer" className="drawer-toggle" />
       <div className="drawer-content">
         <Navbar />
-        <section className="align-element py-20">
+        <section className="align-element py-12">
           <Outlet />
         </section>
       </div>
