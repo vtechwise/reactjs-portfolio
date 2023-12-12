@@ -37,7 +37,7 @@ const Hero = () => {
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
         </h2>
-        <p className="mt-4 leading-7">
+        <p className="mt-4 leading-7 text-neutral-content">
           Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
           passionate about crafting seamless user experiences. With a strong
           foundation in JavaScript and expertise in React.js, I specialize in
