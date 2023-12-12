@@ -3,6 +3,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/about me.svg'
 const Hero = () => {
+    const resumeUrl= 'VICTOR OGUNTAYO CV.pdf'
   return (
     <>
       <div className="flex flex-col gap-y-10 md:flex-row gap-x-20 items-center">
@@ -35,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
           <div className="mt-12">
-              <img src={aboutMe} alt="" className="pb-12" />
+              <img src={aboutMe} alt="" className="pb-12 fill-blue-500" />
         <h2 className="text-2xl text-semibold">
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
@@ -53,7 +54,7 @@ const Hero = () => {
           latest industry trends. Let's collaborate and bring innovative ideas
           to life!{" "}
               </p>
-              <a href=""><button className="btn btn-primary rounded-full"><span><MdOutlineFileDownload/></span>Download Resume</button></a>
+              <a href={resumeUrl}><button className="btn btn-primary rounded-full"><span><MdOutlineFileDownload/></span>Download Resume</button></a>
       </div>
     </>
   );
