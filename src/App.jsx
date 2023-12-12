@@ -1,15 +1,26 @@
 // import './App.css'
 
-import Landing from "./pages/Landing"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HomeLayout, Landing, Contact } from "./pages";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeLayout />,
+    children: [
+      {
+        index: true,
+        element: <Landing />,
+      },
+      {
+        path: 'contact',
+        element:<Contact/>
+    }
+    ],
+  },
+]);
 
 function App() {
-  
-
-  return (
-    <>
-     <Landing/>
-    </>
-  )
+  return <RouterProvider router={router}/>;
 }
 
-export default App
+export default App;
