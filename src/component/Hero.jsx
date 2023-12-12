@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-12">
-        <h2 className="text-3xl text-semibold">
+        <h2 className="text-2xl text-semibold">
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
         </h2>
