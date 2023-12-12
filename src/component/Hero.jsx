@@ -1,4 +1,6 @@
 import portfolioImg from "../assets/portfolioImg.jpg";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { CgMail } from "react-icons/cg";
 
 const Hero = () => {
   return (
@@ -10,7 +12,7 @@ const Hero = () => {
             className="w-screen md:w-[35rem] h-[25rem] md:h-[32rem] object-cover rounded-lg"
             alt=""
           />
-          <button className="btn btn-secondary absolute btn- rounded-full left-5  btn-sm bottom-20">
+          <button className="btn btn-secondary absolute btn- rounded-full left-5  btn-sm bottom-20"> <span><CgMail/></span>
             hello@victor
           </button>
           <p className="mt-4 flex justify-end items-center gap-x-2 text-xs text-content-neutral ">
@@ -27,7 +29,7 @@ const Hero = () => {
             in my code every details serves a purpose- <br /> orchestrating a
             digital masterpiece where user experience flow seamlessly{" "}
           </p>
-          <button className="btn mt-6 btn-primary  rounded-full text-lg  ">
+          <button className="btn mt-6 btn-primary  rounded-full text-md  ">
             Work with me
           </button>
         </div>
@@ -37,7 +39,7 @@ const Hero = () => {
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
         </h2>
-        <p className="mt-4 leading-7 text-neutral-content">
+        <p className="my-4 leading-7 ">
           Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
           passionate about crafting seamless user experiences. With a strong
           foundation in JavaScript and expertise in React.js, I specialize in
@@ -49,7 +51,8 @@ const Hero = () => {
           actively contribute to open-source projects and stay on top of the
           latest industry trends. Let's collaborate and bring innovative ideas
           to life!{" "}
-        </p>
+              </p>
+              <a href=""><button className="btn btn-primary rounded-full"><span><MdOutlineFileDownload/></span>Download Resume</button></a>
       </div>
     </>
   );
