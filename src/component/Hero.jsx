@@ -1,7 +1,7 @@
 import portfolioImg from "../assets/portfolioImg.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
-
+import aboutMe from '../assets/about me.svg'
 const Hero = () => {
   return (
     <>
@@ -34,7 +34,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="mt-12">
+          <div className="mt-12">
+              <img src={aboutMe} alt="" className="pb-12" />
         <h2 className="text-2xl text-semibold">
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
