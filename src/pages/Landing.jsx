@@ -1,9 +1,9 @@
-import { Hero } from "../component";
-
+import { Hero, FeaturedProject } from "../component";
 const Landing = () => { 
     return (
       <>
-        <Hero/>
+        <Hero />
+        <FeaturedProject/>
       </>
     );
 }
