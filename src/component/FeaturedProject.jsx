@@ -1,5 +1,5 @@
 import SectionTitle from './SectionTitle'
-import thumbnail from '../../public/thumbnail.jpg'
+import thumbnail from '../../public/project-one.jpg'
 
 const FeaturedProject = () => {
   return (
