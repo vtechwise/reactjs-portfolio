@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
           <div className="mt-12">
-              <img src={aboutMe} alt="" className="pb-12 fill-blue-500" />
+              <img src={aboutMe} alt="" className="pb-12 pt-10 fill-blue-500 w-[23rem] mx-auto" />
         <h2 className="text-2xl text-semibold">
           My goal as a Frontend web developer is to create memorable,
           user-centered experiences.
