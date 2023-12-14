@@ -1,3 +1,4 @@
+
 export const menus = [
       {
         id:1,
@@ -19,3 +20,21 @@ export const menus = [
 
     }
 ]
+
+export const featuredProject = [
+  {
+    id: 1,
+    title: "comfy store",
+    image: "/comfy.png",
+  },
+  {
+    id: 2,
+    title: "father and sons logistics",
+    image: "/fathers (2).png",
+  },
+  {
+    id: 3,
+    title: "mix master",
+    image: "/mixMaster (2).png",
+  },
+];
