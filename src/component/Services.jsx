@@ -30,15 +30,15 @@ const Services = () => {
             <img src="./figma.png" alt="" className="w-8 inline-block pr-2" />
             figma
           </div>
-          <div className="text-lg capitalize border-4 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
             <img src="./vscode.png" alt="" className="w-8 inline-block pr-2" />
             vs code
           </div>
-          <div className="text-lg capitalize border-4 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
             <img src="./github.png" alt="" className="w-8 inline-block pr-2" />
             github
           </div>{" "}
-          <div className="text-lg capitalize border-4 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
             <img src="./netlify.png" alt="" className="w-8 inline-block pr-2" />
             netlify
           </div>
