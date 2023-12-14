@@ -8,6 +8,6 @@
         @apply max-w-7xl px-4 mx-auto 
     }
     .section-margin {
-        @apply my-16
+        @apply my-12
     }
 }

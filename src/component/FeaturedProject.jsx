@@ -3,20 +3,16 @@ import SectionTitle from "./SectionTitle";
 // import comfyImg from "../assets/comfyStore.png";
 import { featuredProject } from "../utils/data";
 import { Link } from "react-router-dom";
+import Project from "./Project";
 const FeaturedProject = () => {
   return (
     <section className="section-margin">
       <SectionTitle text="my creations" />
-      <div className="grid gap-y-[5rem]">
+      <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10">
         {featuredProject.map((project) => {
           const {id,image,title} = project
          return (
-           <article>
-             <div className="bg-base-300 rounded-xl">
-               <img src={image} alt="" />
-             </div>
-             <h3 className="text-2xl mt-4 capitalize font-bold">{title}</h3>
-           </article>
+           <Project key={project.id} {...project} />
          );
        })}
       </div>
