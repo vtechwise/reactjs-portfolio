@@ -26,7 +26,7 @@ const Services = () => {
       <div className="mt-8">
         <h4 className="capitalize text-lg font-medium mb-4">my daily tools</h4>
         <div className="grid  justify-start gap-y-2">
-          <div className="text-lg capitalize border-4 inline-block py-2 px-4 rounded-full border-base-300 ">
+          <div className="text-lg capitalize border inline-block py-2 px-4 rounded-full border-base-300 ">
             <img src="./figma.png" alt="" className="w-8 inline-block pr-2" />
             figma
           </div>
