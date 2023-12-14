@@ -1,3 +1,7 @@
+import { FaReact } from "react-icons/fa";
+import { TbBrandWebflow } from "react-icons/tb";
+import { FaWordpress } from "react-icons/fa";
+
 export const menus = [
   {
     id: 1,
@@ -37,18 +41,21 @@ export const featuredProject = [
 export const services = [
   {
     id: "1",
+    icon: < FaReact className="" />,
     title: "frontend development",
     description:
-      "Crafting visually appealing and interactive user experiences using HTML, CSS, and JavaScript to enhance the frontend of websites and applications.",
+      "Crafting visually appealing and interactive user experiences using HTML, CSS, JavaScript and it endless framework (React.js) to enhance the frontend of websites and applications.",
   },
   {
     id: "2",
+    icon:<TbBrandWebflow className=""/>,
     title: "webflow development",
     description:
       "Leveraging Webflow's intuitive platform to design and develop responsive websites seamlessly. Transforming ideas into visually stunning and user-friendly web experiences without extensive coding.",
   },
   {
     id: "1",
+    icon:<FaWordpress className=""/>,
     title: "wordpress development",
     description:
       "Harnessing the power of WordPress as a content management system to create diverse websites. From blogs to e-commerce platforms, utilizing themes and plugins to customize designs and functionalities for optimal user engagement.",
