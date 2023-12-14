@@ -25,20 +25,20 @@ const Services = () => {
       </div>
       <div className="mt-8">
         <h4 className="capitalize text-lg font-medium mb-4">my daily tools</h4>
-        <div className="grid  justify-start gap-y-2">
-          <div className="text-lg capitalize border inline-block py-2 px-4 rounded-full border-base-300 ">
+        <div className="grid  justify-start gap-y-2 grid-cols-2">
+          <div className="text-lg capitalize border inline-block py-2 px-4 rounded-full w-36 border-base-300 ">
             <img src="./figma.png" alt="" className="w-8 inline-block pr-2" />
             figma
           </div>
-          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300  w-36">
             <img src="./vscode.png" alt="" className="w-8 inline-block pr-2" />
             vs code
           </div>
-          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300  w-36">
             <img src="./github.png" alt="" className="w-8 inline-block pr-2" />
             github
           </div>{" "}
-          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300">
+          <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300  w-36">
             <img src="./netlify.png" alt="" className="w-8 inline-block pr-2" />
             netlify
           </div>
