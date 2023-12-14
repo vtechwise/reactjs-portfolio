@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <section className=" bg-base-300">
-      <nav className="navbar align-element fixed top-0 h-16 w-full bg-base-300 shadow-xl">
+      <nav className="navbar align-element fixed top-0 sm:static h-16 w-full bg-base-300 shadow-xl z-10">
         <div className="navbar-start ">
           <h3 className="text-2xl tracking-wider font-bold  text-slant capitalize">
             vtech
