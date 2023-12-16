@@ -6,7 +6,7 @@ const Hero = () => {
     const resumeUrl= 'VICTOR OGUNTAYO CV.pdf'
   return (
     <>
-      <div className="flex flex-col gap-y-10 md:flex-row gap-x-20 items-center">
+      <div className="flex flex-col gap-y-10 sm:flex-row gap-x-12 items-center">
         <div className="rounded-lg relative">
           <img
             src={portfolioImg}
