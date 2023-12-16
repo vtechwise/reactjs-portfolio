@@ -28,12 +28,13 @@ const NavBar = () => {
     <section className=" bg-base-300">
       <nav className="navbar align-element fixed top-0 sm:static h-16 w-full bg-base-300 shadow-xl z-10">
         <div className="navbar-start ">
-          <h3 className="text-2xl tracking-wider font-bold  text-slant capitalize">
+          {/* <h3 className="text-2xl tracking-wider font-bold  text-slant capitalize">
             vtech
             <span className="text-primary font-normal">wise</span>
-          </h3>
+          </h3> */}
+          <div className="h-8 w-8 bg-primary grid place-items-center rounded-md  "><span className="text-2xl">v</span></div>
         </div>
-        <div className="navbar-center hidden lg:!flex">
+        <div className="navbar-center hidden md:!flex">
           <div className="menu  menu-horizontal gap-x-4">
             {menus.map((menu) => {
               return <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
