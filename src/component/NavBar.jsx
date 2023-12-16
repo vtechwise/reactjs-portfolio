@@ -2,6 +2,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { menus } from "../utils/data";
+import { Link } from "react-router-dom";
 const themes = {
     cupcake: 'cupcake',
     synthwave:'synthwave'
@@ -32,7 +33,7 @@ const NavBar = () => {
             vtech
             <span className="text-primary font-normal">wise</span>
           </h3> */}
-          <div className="h-8 w-8 bg-primary grid place-items-center rounded-md  "><span className="text-2xl">v</span></div>
+          <Link to={'/'} className="h-8 w-8 bg-primary grid place-items-center rounded-md  "><span className="text-2xl">v</span></Link>
         </div>
         <div className="navbar-center hidden md:!flex">
           <div className="menu  menu-horizontal gap-x-4">

@@ -2,6 +2,7 @@ import portfolioImg from "../assets/portfolioImg.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/about me.svg'
+import { Link } from "react-router-dom";
 const Hero = () => {
     const resumeUrl= 'VICTOR OGUNTAYO CV.pdf'
   return (
@@ -34,9 +35,11 @@ const Hero = () => {
             in my code every details serves a purpose- <br /> orchestrating a
             digital masterpiece where user experience flow seamlessly{" "}
           </p>
-          <button className="btn mt-6 btn-primary  rounded-full text-md  ">
-            Work with me
-          </button>
+          <Link to={'/contact'}>
+            <button className="btn mt-6 btn-primary  rounded-full text-md  ">
+              Work with me
+            </button>
+          </Link>
         </div>
       </div>
       <div className="mt-12 grid md:grid-cols-2 ">
