@@ -13,7 +13,11 @@ const Hero = () => {
             className="w-screen md:w-[35rem] h-[25rem] md:h-[32rem] object-cover rounded-lg"
             alt=""
           />
-          <button className="btn btn-secondary absolute btn- rounded-full left-5  btn-sm bottom-20"> <span><CgMail/></span>
+          <button className="btn btn-secondary absolute btn- rounded-full left-5  btn-sm bottom-20">
+            {" "}
+            <span>
+              <CgMail />
+            </span>
             hello@victor
           </button>
           <p className="mt-4 flex justify-end items-center gap-x-2 text-xs text-content-neutral ">
@@ -35,26 +39,40 @@ const Hero = () => {
           </button>
         </div>
       </div>
-          <div className="mt-12">
-              <img src={aboutMe} alt="" className="pb-12 pt-10 fill-blue-500 w-[23rem] mx-auto" />
-        <h2 className="text-2xl text-semibold">
-          My goal as a Frontend web developer is to create memorable,
-          user-centered experiences.
-        </h2>
-        <p className="my-4 leading-7 ">
-          Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
-          passionate about crafting seamless user experiences. With a strong
-          foundation in JavaScript and expertise in React.js, I specialize in
-          building responsive and intuitive web applications. I bring a
-          commitment to clean, maintainable code and thrive in collaborative
-          environments. From e-commerce platforms to interactive dashboards, my
-          diverse project experience reflects my ability to find elegant
-          solutions to unique challenges. Committed to continuous learning, I
-          actively contribute to open-source projects and stay on top of the
-          latest industry trends. Let's collaborate and bring innovative ideas
-          to life!{" "}
-              </p>
-              <a href={resumeUrl}><button className="btn btn-primary rounded-full"><span><MdOutlineFileDownload/></span>Download Resume</button></a>
+      <div className="mt-12 grid md:grid-cols-2 ">
+        <img
+          src={aboutMe}
+          alt=""
+          className="pb-12 pt-10 fill-blue-500 w-[23rem] mx-auto md:mx-0"
+        />
+
+        <div>
+          <h2 className="text-2xl text-semibold">
+            My goal as a Frontend web developer is to create memorable,
+            user-centered experiences.
+          </h2>
+          <p className="my-4 leading-7 ">
+            Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
+            passionate about crafting seamless user experiences. With a strong
+            foundation in JavaScript and expertise in React.js, I specialize in
+            building responsive and intuitive web applications. I bring a
+            commitment to clean, maintainable code and thrive in collaborative
+            environments. From e-commerce platforms to interactive dashboards,
+            my diverse project experience reflects my ability to find elegant
+            solutions to unique challenges. Committed to continuous learning, I
+            actively contribute to open-source projects and stay on top of the
+            latest industry trends. Let's collaborate and bring innovative ideas
+            to life!{" "}
+          </p>
+          <a href={resumeUrl}>
+            <button className="btn btn-primary rounded-full">
+              <span>
+                <MdOutlineFileDownload />
+              </span>
+              Download Resume
+            </button>
+          </a>
+        </div>
       </div>
     </>
   );

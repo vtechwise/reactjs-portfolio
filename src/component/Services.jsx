@@ -14,7 +14,7 @@ const Services = () => {
               key={id}
               className="bg-base-300 border-b-4 border-primary p-10 rounded-xl "
             >
-              <span className="text-8xl inline-block pb-2">{icon}</span>
+              <span className="text-5xl inline-block pb-2">{icon}</span>
               <h2 className="text-2xl pb-4 capitalize font-semibold">
                 {title}
               </h2>
