@@ -30,13 +30,7 @@ export const loader = async () => {
 const Projects = () => {
   const  projects  = useLoaderData()
   // console.log(projects);
-  const navigate = useNavigation()
-  const isLoading = navigate.state === 'loading'
-  if (isLoading) {
-    return <section className="h-screen grid place-items-center">
-      <div className="loading loading-spinner">bbbb</div>
-    </section>
-  }
+ 
   return (
     <section className="section-margin">
 <SectionTitle text='projects'/>

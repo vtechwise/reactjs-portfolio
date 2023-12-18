@@ -1,10 +1,21 @@
 import { Outlet } from "react-router-dom";
 import { menus } from "../utils/data";
 import { Navbar } from "../component";
-
+import { useNavigation } from "react-router-dom";
 
 
 const HomeLayout = () => {
+
+ const navigate = useNavigation();
+ const isLoading = navigate.state === "loading";
+ if (isLoading) {
+   return (
+     <section className="h-screen grid place-items-center">
+       <div className="loading loading-spinner">bbbb</div>
+     </section>
+   );
+ }
+
   return (
     <div className="drawer drawer-end ">
       <input type="checkbox" id="my-drawer" className="drawer-toggle" />
