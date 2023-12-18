@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { HomeLayout, Landing, Contact, Projects, SingleProject } from "./pages";
 
 import {loader as projectsLoader} from './pages/Projects'
-
+import {loader as singleProjectLoader} from './pages/SingleProject'
 
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "project/:id",
         element: <SingleProject />,
-        loader: projectsLoader,
+        loader:singleProjectLoader
       },
     ],
   },

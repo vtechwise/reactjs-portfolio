@@ -62,3 +62,23 @@ export const services = [
       "Harnessing the power of WordPress as a content management system to create diverse websites. From blogs to e-commerce platforms, utilizing themes and plugins to customize designs and functionalities for optimal user engagement.",
   },
 ];
+
+export const singleProjects = [
+  {
+    title:'comfy store'
+  },{
+    title:'mix master'
+  },
+  {
+    title:'tea station'
+  },
+  {
+    title:'jobster'
+  },
+]
+
+
+
+
+
+

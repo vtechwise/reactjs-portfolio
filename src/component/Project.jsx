@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Project = ({ image, title }) => {
-  console.log(title);
+  // console.log(title);
   return (
     <Link to={`/project/${title}`}>
       <div className="bg-base-300 rounded-xl group overflow-hidden">
