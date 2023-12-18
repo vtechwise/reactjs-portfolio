@@ -38,7 +38,7 @@ const Projects = () => {
     </section>
   }
   return (
-    <section className="">
+    <section className="section-margin">
 <SectionTitle text='projects'/>
     <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10  ">
       {projects.map((project) => {
