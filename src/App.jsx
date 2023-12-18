@@ -2,6 +2,11 @@
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { HomeLayout, Landing, Contact, Projects } from "./pages";
+
+import {loader as projectsLoader} from './pages/Projects'
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />,
+        loader:projectsLoader,
       },
     ],
   },

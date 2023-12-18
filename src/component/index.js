@@ -4,3 +4,4 @@ export {default as Hero} from'./Hero'
 export { default as SectionTitle } from "./SectionTitle";
 export { default as FeaturedProject } from "./FeaturedProject";
 export { default as Services } from "./Services";
+export {default as Project} from './Project'
