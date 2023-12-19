@@ -84,7 +84,7 @@ export const singleProjects = [
     title: "mix master",
     description:
       "MixMaster, a ReactJS project, is a user-friendly cocktail discovery app that allows users to seamlessly search for their favorite cocktail drinks and access comprehensive details about each concoction. Leveraging React Query for efficient state management, the app boasts a responsive design for a smooth user experience. Users can explore a diverse range of cocktails, accessing vital information such as drink descriptions, ingredients, and preparation instructions. MixMaster not only simplifies the search for the perfect drink but also serves as an interactive guide, providing enthusiasts with a wealth of details to elevate their mixology experience.",
-    url: "https://vcomfystore.netlify.app/",
+    url: "https://vmixmaster.netlify.app/",
     skills: ["react.js", "react query", "HTML", "styled component"],
     service: "website development",
   },
