@@ -21,7 +21,7 @@ const HomeLayout = () => {
       <input type="checkbox" id="my-drawer" className="drawer-toggle" />
       <div className="drawer-content">
         <Navbar />
-        <section className="align-element pt-16 mb-12">
+        <section className="align-element pt-16 mb-6">
           <Outlet />
         </section>
       </div>
