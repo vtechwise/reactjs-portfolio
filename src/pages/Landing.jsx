@@ -17,7 +17,7 @@ const Landing = () => {
           </p>
         </div>
       </section>
-      <section className="grid place-items-center section-margin" >
+      <section className="grid place-items-center py-6" >
         <div><p className="capitalize font-semibold">crafted by victor olabisi</p></div>
       </section>
     </>
