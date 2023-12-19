@@ -37,7 +37,7 @@ const SingleProject = () => {
             </span>
             <span className="text-lg">{service}</span>
           </div>
-          <a href={url}>
+          <a href={url} target="blank">
             <button className="btn btn-primary rounded-full mt-4">
               visit website
             </button>
