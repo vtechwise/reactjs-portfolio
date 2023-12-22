@@ -34,16 +34,20 @@ const getProjectsFromLocalStorage = () => {
   let projects = localStorage.getItem('projects')
  return  projects = JSON.parse(projects)
 }
+const getActiveFromLocalStorage = ()=>{
+  return localStorage.getItem('active');
+}
 
 const Projects = () => {
   const projects = useLoaderData()
   const [allProjects, setAllProjects] = useState(getProjectsFromLocalStorage() || projects)
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(getActiveFromLocalStorage() || false)
 
   const filterProjects = (category) => {
     const newProjects = projects.filter((project) => {
       if (category === project.category) {
         setIsActive(true)
+        localStorage.setItem('active',isActive)
       }
        if (category === "all") {
          return project;
@@ -53,7 +57,7 @@ const Projects = () => {
     })
     localStorage.setItem('projects', JSON.stringify(newProjects))
     setAllProjects(newProjects)
-    console.log(isActive);
+    // console.log(isActive);
     // console.log(allProjects);
   }
   
