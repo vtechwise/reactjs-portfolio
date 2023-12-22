@@ -35,8 +35,8 @@ const getProjectsFromLocalStorage = () => {
  return  projects = JSON.parse(projects)
 }
 const getActiveFromLocalStorage = ()=>{
-  let active = localStorage.getItem('active');
-  return JSON.parse(active)
+  return localStorage.getItem('active');
+  
 }
 
 const Projects = () => {
@@ -49,7 +49,7 @@ const Projects = () => {
       if (category === project.category) {
         setIsActive(true)
         const active = true
-        localStorage.setItem('active',JSON.stringify(active))
+        localStorage.setItem('active',active)
       }
       if (category === "all") {
          setIsActive(true)
