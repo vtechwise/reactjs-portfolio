@@ -12,7 +12,7 @@ const FilterBtn = ({ projects, filterProjects }) => {
   return (
       <div className="flex gap-x-4 justify-center mb-12">
           {filter.map((category) => {
-              return <button className="btn-primary btn btn-sm" key={category} onClick={()=> filterProjects(category)}>{category??''}</button>
+              return <button className="btn-primary btn btn-sm rounded-sm" key={category} onClick={()=> filterProjects(category)}>{category??''}</button>
         })}
     </div>
   )

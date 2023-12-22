@@ -30,11 +30,14 @@ export const loader = async () => {
   return error
  }
 }
-
+const getProjectsFromLocalStorage = () => {
+  let projects = localStorage.getItem('projects')
+ return  projects = JSON.parse(projects)
+}
 
 const Projects = () => {
   const projects = useLoaderData()
-  const [allProjects, setAllProjects] = useState(projects)
+  const [allProjects, setAllProjects] = useState(getProjectsFromLocalStorage() || projects)
 
   const filterProjects = (category) => {
     const newProjects = projects.filter((project) => {
@@ -44,6 +47,7 @@ const Projects = () => {
       return project.category === category
      
     })
+    localStorage.setItem('projects', JSON.stringify(newProjects))
     setAllProjects(newProjects)
     // console.log(allProjects);
   }
