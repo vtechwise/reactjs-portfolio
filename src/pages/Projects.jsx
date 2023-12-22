@@ -35,7 +35,8 @@ const getProjectsFromLocalStorage = () => {
  return  projects = JSON.parse(projects)
 }
 const getActiveFromLocalStorage = ()=>{
-  return localStorage.getItem('active');
+  let active = localStorage.getItem('active');
+  return JSON.parse(active)
 }
 
 const Projects = () => {
@@ -47,7 +48,7 @@ const Projects = () => {
     const newProjects = projects.filter((project) => {
       if (category === project.category) {
         setIsActive(true)
-        localStorage.setItem('active',isActive)
+        localStorage.setItem('active',JSON.stringify(isActive))
       }
        if (category === "all") {
          return project;
