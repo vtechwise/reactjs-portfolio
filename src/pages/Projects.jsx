@@ -50,7 +50,8 @@ const Projects = () => {
         setIsActive(true)
         localStorage.setItem('active',JSON.stringify(isActive))
       }
-       if (category === "all") {
+      if (category === "all") {
+         setIsActive(true)
          return project;
        }
       return project.category === category
