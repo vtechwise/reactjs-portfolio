@@ -41,8 +41,8 @@ const getActiveFromLocalStorage = ()=>{
 
 const Projects = () => {
   const projects = useLoaderData()
-  const [allProjects, setAllProjects] = useState(getProjectsFromLocalStorage() || projects)
   const [isActive, setIsActive] = useState(getActiveFromLocalStorage() || false)
+  const [allProjects, setAllProjects] = useState(getProjectsFromLocalStorage() || projects)
 
   const filterProjects = (category) => {
     const newProjects = projects.filter((project) => {
