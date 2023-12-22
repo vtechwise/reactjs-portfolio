@@ -1,4 +1,7 @@
 import { Hero, FeaturedProject, Services, SectionTitle } from "../component";
+
+
+
 const Landing = () => {
   return (
     <>

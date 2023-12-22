@@ -1,7 +1,7 @@
 // import './App.css'
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HomeLayout, Landing, Contact, Projects, SingleProject } from "./pages";
+import { HomeLayout, Landing, Contact, Projects, SingleProject,Error } from "./pages";
 
 import {loader as projectsLoader} from './pages/Projects'
 import {loader as singleProjectLoader} from './pages/SingleProject'
@@ -11,6 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
+    errorElement:<Error/>,
     children: [
       {
         index: true,
