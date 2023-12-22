@@ -48,7 +48,8 @@ const Projects = () => {
     const newProjects = projects.filter((project) => {
       if (category === project.category) {
         setIsActive(true)
-        localStorage.setItem('active',JSON.stringify(isActive))
+        const active = true
+        localStorage.setItem('active',JSON.stringify(active))
       }
       if (category === "all") {
          setIsActive(true)
