@@ -10,9 +10,19 @@ const FilterBtn = ({ projects, filterProjects,isActive }) => {
     filter= Array.from(filter)
 //    console.log(filter);
   return (
-      <div className="flex gap-x-4 justify-center mb-12">
+      <div className="flex gap-x-2 justify-center mb-12">
           {filter.map((category,index) => {
-              return <button className={` btn btn-sm rounded-sm  border-2 border-primary hover:btn-primary ${isActive ? 'btn-primary' : ' '}`} key={index} onClick={()=> filterProjects(category)}>{category??''}</button>
+              return (
+                <button
+                  className={`${
+                    isActive ? "btn-primary" : " "
+                  } btn btn-xs rounded-sm  border border-primary hover:btn-primary `}
+                  key={index}
+                  onClick={() => filterProjects(category)}
+                >
+                  {category ?? ""}
+                </button>
+              );
         })}
     </div>
   )

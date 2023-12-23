@@ -48,8 +48,7 @@ const Projects = () => {
     const newProjects = projects.filter((project) => {
       if (category === project.category) {
         setIsActive(true)
-        const active = true
-        localStorage.setItem('active',active)
+      
       }
       if (category === "all") {
          setIsActive(true)
@@ -60,6 +59,8 @@ const Projects = () => {
     })
     localStorage.setItem('projects', JSON.stringify(newProjects))
     setAllProjects(newProjects)
+      const active = true;
+      localStorage.setItem("active", active);
     // console.log(isActive);
     // console.log(allProjects);
   }
