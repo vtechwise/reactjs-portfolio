@@ -6,13 +6,20 @@ const Project = ({ image, title, category }) => {
   // console.log(title);
   return (
     <>
-    <Link to={`/project/${title}`}>
-      <div className="bg-base-300 rounded-xl group overflow-hidden">
-        <img src={image} alt=""  className="group-hover:scale-105 duration-300 transition"/>
+      <div>
+        <Link
+          to={`/project/${title}`}
+          className="bg-base-300 rounded-xl group overflow-hidden"
+        >
+          <img
+            src={image}
+            alt=""
+            className="group-hover:scale-105 duration-300 transition"
+          />
+        </Link>
+        <h3 className="text-xl mt-4 capitalize font-semibold t">{title}</h3>
+        {/* <h4>{category}</h4> */}
       </div>
-      <h3 className="text-xl mt-4 capitalize font-semibold t">{title}</h3>
-      <h4>{category}</h4>
-    </Link>
     </>
   );
 }

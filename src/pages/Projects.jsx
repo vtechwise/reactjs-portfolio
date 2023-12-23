@@ -34,24 +34,17 @@ const getProjectsFromLocalStorage = () => {
   let projects = localStorage.getItem('projects')
  return  projects = JSON.parse(projects)
 }
-const getActiveFromLocalStorage = ()=>{
-  return localStorage.getItem('active');
-  
-}
+
 
 const Projects = () => {
   const projects = useLoaderData()
-  const [isActive, setIsActive] = useState(getActiveFromLocalStorage() || false)
   const [allProjects, setAllProjects] = useState(getProjectsFromLocalStorage() || projects)
 
   const filterProjects = (category) => {
     const newProjects = projects.filter((project) => {
-      if (category === project.category) {
-        setIsActive(true)
       
-      }
       if (category === "all") {
-         setIsActive(true)
+         
          return project;
        }
       return project.category === category
@@ -59,10 +52,8 @@ const Projects = () => {
     })
     localStorage.setItem('projects', JSON.stringify(newProjects))
     setAllProjects(newProjects)
-      const active = true;
-      localStorage.setItem("active", active);
-    // console.log(isActive);
-    // console.log(allProjects);
+      
+  
   }
   
   // console.log(projects);
@@ -70,7 +61,7 @@ const Projects = () => {
   return (
     <section className="section-margin">
       <SectionTitle text='projects' />
-      <FilterBtn projects={projects} filterProjects={filterProjects} active={isActive} />
+      <FilterBtn projects={projects} filterProjects={filterProjects}  />
     <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10  ">
       {allProjects.map((project) => {
         return <Project {...project} key={project.id} />;

@@ -1,7 +1,15 @@
 import { useLoaderData } from "react-router-dom"
 import { useState } from "react"
 
-const FilterBtn = ({ projects, filterProjects,isActive }) => {
+const getCurrentItemFromLocalStorage = () => {
+  let item = localStorage.getItem('currentItem')
+  return JSON.parse(item)
+}
+
+const FilterBtn = ({ projects, filterProjects }) => {
+  const [currentItem, setCurrentItem] = useState(
+    getCurrentItemFromLocalStorage() || 0
+  );
     let filter = projects.map((project) => {
         if(!project) return 
         return project.category
@@ -14,11 +22,13 @@ const FilterBtn = ({ projects, filterProjects,isActive }) => {
           {filter.map((category,index) => {
               return (
                 <button
-                  className={`${
-                    isActive ? "btn-primary" : " "
-                  } btn btn-xs rounded-sm  border border-primary hover:btn-primary `}
+                  className={`${index === currentItem?'btn-primary': ''} btn btn-xs rounded-sm  border border-primary hover:btn-primary `}
                   key={index}
-                  onClick={() => filterProjects(category)}
+                  onClick={() => {
+                    setCurrentItem(index)
+                    localStorage.setItem('currentItem', index)
+                    filterProjects(category)
+                  }}
                 >
                   {category ?? ""}
                 </button>
