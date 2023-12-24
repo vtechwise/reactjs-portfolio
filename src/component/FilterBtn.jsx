@@ -22,12 +22,16 @@ const FilterBtn = ({ projects, filterProjects }) => {
           {filter.map((category,index) => {
               return (
                 <button
-                  className={`${index === currentItem?'btn-primary': ''} btn btn-xs rounded-sm  border border-primary hover:btn-primary `}
+                  className={`${
+                    index === currentItem
+                      ? "!border-b-primary !border-b-4"
+                      : ""
+                  } text-sm rounded-sm pb-[0.3rem]  border-b-4 border-white/0`}
                   key={index}
                   onClick={() => {
-                    setCurrentItem(index)
-                    localStorage.setItem('currentItem', index)
-                    filterProjects(category)
+                    setCurrentItem(index);
+                    localStorage.setItem("currentItem", index);
+                    filterProjects(category);
                   }}
                 >
                   {category ?? ""}
