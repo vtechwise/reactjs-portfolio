@@ -18,6 +18,7 @@ const Contact = () => {
               type="text"
               className=" input input-bordered"
               name="first name"
+              required
             />
           </div>
           <div className="form-control">
@@ -28,6 +29,7 @@ const Contact = () => {
               type="text"
               className=" input input-bordered "
               name="last name"
+              required
             />
           </div>
           <div className="form-control">
@@ -35,6 +37,7 @@ const Contact = () => {
               <span className="label-text">email</span>
             </label>
             <input
+              required
               type="email"
               className=" input input-bordered "
               name="email"
@@ -46,10 +49,12 @@ const Contact = () => {
             </label>
             <textarea
               name="message"
+              required
               cols="30"
               rows="10"
               className="textarea textarea-bordered "
             ></textarea>
+            <button className="btn btn-primary mt-4">submit</button>
           </div>
         </form>
         <div className="faq mt-6">
@@ -61,7 +66,7 @@ const Contact = () => {
             </div>
             <div className="collapse-content">
               <p>
-                : I am proficient in HTML, CSS, and JavaScript, which form the
+                I am proficient in HTML, CSS, and JavaScript, which form the
                 foundation of my frontend development skills. Additionally, I
                 have hands-on experience with popular frontend libraries and
                 frameworks such as React.js, enabling me to build interactive
