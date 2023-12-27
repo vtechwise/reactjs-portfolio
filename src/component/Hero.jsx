@@ -1,7 +1,7 @@
 import portfolioImg from "../assets/portfolioImg.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
-import aboutMe from '../assets/about me.svg'
+import aboutMe from '../assets/aboute me.svg'
 import { Link } from "react-router-dom";
 const Hero = () => {
     const resumeUrl= 'VICTOR OGUNTAYO CV.pdf'
@@ -14,7 +14,7 @@ const Hero = () => {
             className="w-screen md:w-[35rem] h-[25rem] md:h-[32rem] object-cover rounded-lg"
             alt=""
           />
-          <button className="btn btn-secondary absolute btn- rounded-full left-5  btn-sm bottom-20">
+          <button className="btn btn-primary absolute btn- rounded-full left-5  btn-sm bottom-20">
             {" "}
             <span>
               <CgMail />
