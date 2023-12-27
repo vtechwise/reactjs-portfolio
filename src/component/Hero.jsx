@@ -10,10 +10,13 @@ const Hero = () => {
       <div className="flex flex-col gap-y-10 sm:flex-row gap-x-12 items-center pt-14 md:mb-24">
         <div className="rounded-lg relative">
           <img
-            src={portfolioImg}
             className="w-screen md:w-[35rem] h-[25rem] md:h-[32rem] object-cover rounded-lg"
+            src={portfolioImg}
             alt=""
           />
+          <svg>
+
+          </svg>
           <button className="btn btn-primary absolute btn- rounded-full left-5  btn-sm bottom-20">
             {" "}
             <span>
