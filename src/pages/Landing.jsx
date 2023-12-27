@@ -10,7 +10,7 @@ const Landing = () => {
       <Services />
       <section className="section-margin">
         <SectionTitle text="want to work" />
-        <div className="bg-base-300 p-8">
+        <div className="bg-base-300 p-8 max-w-[30rem]">
           <p>
             if you need a modern and powerful website for your business,startup
             or yourself, i am available for work. you can email me directly at{" "}

@@ -5,18 +5,18 @@ import { menus } from "../utils/data";
 import { Link } from "react-router-dom";
 const themes = {
     cupcake: 'cupcake',
-    synthwave:'synthwave'
+    sunset:'sunset'
 }
 const getThemeFromLocalStorage = () => {
-   return localStorage.getItem('theme') || themes.synthwave
+   return localStorage.getItem('theme') || themes.sunset
 }
 
 
 const NavBar = () => {
     const [theme, setTheme] = useState(getThemeFromLocalStorage());
     const toggleTheme = () => {
-        const {cupcake, synthwave} = themes
-        const newTheme = theme == cupcake ? synthwave : cupcake;
+        const {cupcake, sunset} = themes
+        const newTheme = theme == cupcake ? sunset : cupcake;
         setTheme(newTheme)
         document.documentElement.setAttribute('data-theme', theme)
     }
