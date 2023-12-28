@@ -1,7 +1,7 @@
 import { SectionTitle } from "../component";
 import { singleProjects } from "../utils/data";
 import { useLoaderData } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export const loader = ({ params }) => {
   const title = params.id;
   const singleProject = singleProjects.find((project) => {
@@ -16,6 +16,16 @@ const SingleProject = () => {
   // console.log(skills);
   return (
     <section className="section-margin">
+      <div className="text-md breadcrumbs">
+        <ul>
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to={"/projects"}>projects</Link>
+          </li>
+        </ul>
+      </div>
       <SectionTitle text={title} />
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
         <div className="grid gap-y-2 md:gap-y-0 items-start">
@@ -33,7 +43,7 @@ const SingleProject = () => {
           </div>
           <div>
             <span className="text-xl capitalize tracking-wider font-bold">
-              service : 
+              service :
             </span>
             <span className="text-lg">{service}</span>
           </div>
