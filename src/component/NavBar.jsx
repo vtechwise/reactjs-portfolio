@@ -41,14 +41,14 @@ const NavBar = () => {
             {menus.map((menu) => {
               <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
               return (
-                <HashLink to='#home'>
+                <Link to={menu.url}>
                   <li
                     className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300"
                     key={menu.id}
                   >
                     {menu.text}
                   </li>
-                </HashLink>
+                </Link>
               );
             })}
           </div>

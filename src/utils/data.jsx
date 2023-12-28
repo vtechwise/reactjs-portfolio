@@ -7,22 +7,22 @@ export const menus = [
   {
     id: 1,
     text: "home",
-    url:'#home'
+    url:'/'
   },
   {
     id: 2,
     text: "about",
-    url:'#about'
+    url:'/about'
   },
   {
     id: 13,
     text: "projects",
-    url:'#project'
+    url:'/projects'
   },
   {
     id: 4,
-    text: "services",
-    url:'#services'
+    text: "contact",
+    url:'/contact'
   },
 ];
 
