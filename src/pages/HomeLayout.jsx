@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { menus } from "../utils/data";
 import { Navbar } from "../component";
 import { useNavigation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 
 const HomeLayout = () => {
@@ -35,12 +36,14 @@ const HomeLayout = () => {
           {/* Sidebar content here */}
           {menus.map((menu) => {
             return (
-              <li
-                className="capitalize text-xl menu-item p-4 hover:bg-secondary hover:pl-6 transition-all duration-700 "
-                key={menu.id}
-              >
-                {menu.text}
-              </li>
+              <HashLink to='#home' >
+                <li
+                  className="capitalize text-xl menu-item p-4 hover:bg-secondary hover:pl-6 transition-all duration-700 "
+                  key={menu.id}
+                >
+                  {menu.text}
+                </li>
+              </HashLink>
             );
           })}
         </ul>

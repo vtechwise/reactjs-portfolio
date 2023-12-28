@@ -3,6 +3,7 @@ import { BsCart3, BsMoonFill, BsSunFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { menus } from "../utils/data";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 const themes = {
     cupcake: 'cupcake',
     dark:'dark'
@@ -38,7 +39,17 @@ const NavBar = () => {
         <div className="navbar-center hidden md:!flex">
           <div className="menu  menu-horizontal gap-x-4">
             {menus.map((menu) => {
-              return <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
+              <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
+              return (
+                <HashLink to='#home'>
+                  <li
+                    className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300"
+                    key={menu.id}
+                  >
+                    {menu.text}
+                  </li>
+                </HashLink>
+              );
             })}
           </div>
         </div>

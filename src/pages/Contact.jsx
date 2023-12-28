@@ -61,7 +61,7 @@ const Contact = () => {
           <SectionTitle text="frequently asked question" />
           <div className="collapse collapse-arrow bg-base-200 ">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-lg font-medium">
               What technologies are you proficient in for frontend development?{" "}
             </div>
             <div className="collapse-content">
@@ -76,7 +76,7 @@ const Contact = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200 ">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-lg font-medium">
               Can you describe your approach to responsive web design?
             </div>
             <div className="collapse-content">
@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200 ">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-lg font-medium">
               How do you optimize web performance for faster loading times?{" "}
             </div>
             <div className="collapse-content">
@@ -108,7 +108,7 @@ const Contact = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200 ">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-lg font-medium">
               What is your experience with version control systems, and which
               one do you prefer?
             </div>
