@@ -1,6 +1,6 @@
 import { Hero, FeaturedProject, Services, SectionTitle } from "../component";
 import contactImg from  '../assets/contact-us.svg'
-
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -11,15 +11,14 @@ const Landing = () => {
       <section className="section-margin">
         <SectionTitle text="want to work" />
         <div className="grid md:grid-cols-2 gap-x-12">
-          <div className="bg-base-300 p-8 max-w-[36rem] self-start md:mt-16">
-            <img src={contactImg} className="mb-6 w-[25rem] mx-auto" alt="" />
+          <div className="bg-base-300 p-8 max-w-[36rem] self-start md:mt-16 ">
+            <img src={contactImg} className="mb-6 w-[25rem] mx-auto " alt="" />
             <p>
               if you need a modern and powerful website for your
-              business,startup or yourself, i am available for work. you can
-              email me directly at{" "}
-              <span className="link text-primary font-bold text-lg ">
-                victoroguntayo65@gmail.com
-              </span>{" "}
+              business,startup or yourself, i am available for work.
+              <Link to={'/contact'} className=" font-bold   grid place-items-center ">
+                <button className="btn-primary btn block mt-6 text-center rounded-full text-lg ">contact us</button>
+              </Link>{" "}
             </p>
           </div>
           <div className="faq mt-6 hidden md:block">

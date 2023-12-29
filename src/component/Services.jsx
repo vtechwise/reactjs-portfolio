@@ -23,10 +23,10 @@ const Services = () => {
           );
         })}
       </div>
-      <div className="mt-8 grid md:grid-cols-2 mt-24 gap-x-20">
+      <div className="mt-16 grid md:grid-cols-2  gap-x-20 md:mt-24">
         <img src={servicesImg} alt="" className="rounded-lg mb-4" />
         <div className="flex flex-col justify-between gap-y-20">
-          <p className="text-lg">
+          <p className="text-">
             empowered by a versatile tools box and honed skills,i utilized
             cutting-edge technology to bring digital visions into life. Each
             toolis carefully selected to elevate projects, ensuring they stand
