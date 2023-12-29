@@ -16,7 +16,7 @@ const FeaturedProject = () => {
          );
        })}
       </div>
-<Link to={'/projects'} className="flex justify-end"> <button className="btn btn-primary rounded-full capitalize mt-8 ">  View all works</button> </Link>
+<Link to={'/projects'} className="flex md:justify-end"> <button className="btn btn-primary rounded-full capitalize mt-8 ">  View all works</button> </Link>
     </section>
   );
 };
