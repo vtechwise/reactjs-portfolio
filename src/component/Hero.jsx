@@ -4,7 +4,7 @@ import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/aboute me.svg'
 import { Link } from "react-router-dom";
 const Hero = () => {
-    const resumeUrl= 'VICTOR OGUNTAYO CV.pdf'
+    const resumeUrl= 'victor-olabisi cv.pdf'
   return (
     <>
       <div className="flex flex-col gap-y-10 sm:flex-row gap-x-12 items-center pt-14 md:mb-24" id="home">
