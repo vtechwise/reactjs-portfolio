@@ -5,7 +5,7 @@ import { Link, ScrollRestoration } from "react-router-dom";
 const Landing = () => {
   return (
     <>
-      <ScrollRestoration/>
+      {/* <ScrollRestoration/> */}
       <Hero />
       <FeaturedProject />
       <Services />
