@@ -4,7 +4,7 @@ import contactImg from "../assets/contact-us.svg";
 const Contact = () => {
   return (
     <section className="my-16">
-      <SectionTitle text='let"s talk' />
+      <SectionTitle text='lets talk' />
       <div className="grid place-items-center">
         <img src={contactImg} alt="" />
       </div>
