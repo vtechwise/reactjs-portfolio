@@ -1,10 +1,11 @@
 import { Hero, FeaturedProject, Services, SectionTitle } from "../component";
 import contactImg from  '../assets/contact-us.svg'
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const Landing = () => {
   return (
     <>
+      <ScrollRestoration/>
       <Hero />
       <FeaturedProject />
       <Services />
