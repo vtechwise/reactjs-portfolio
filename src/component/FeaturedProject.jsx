@@ -10,7 +10,7 @@ const FeaturedProject = () => {
       <SectionTitle text="my creations" />
       <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10">
         {featuredProject.map((project) => {
-          const {id,image,title} = project
+          const { id, image, title } = project
          return (
            <Project key={project.id} {...project} />
          );

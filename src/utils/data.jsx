@@ -96,7 +96,7 @@ export const singleProjects = [
     title: "tea station",
     description:
       "The Semantic HTML and CSS Showcase is a project meticulously crafted to highlight my proficiency in creating structured and accessible web designs. Focused on semantic HTML, the project emphasizes the use of meaningful tags to enhance website structure and accessibility. Leveraging CSS Grid and Flexbox, the layout design achieves a harmonious balance of responsiveness and visual appeal across various screen sizes. Every element is strategically positioned to showcase a mastery of layout techniques, ensuring seamless navigation and an engaging user experience. Through this project, I aim to demonstrate the power of semantic HTML paired with advanced CSS features, emphasizing clean code practices and the ability to create visually compelling, responsive web designs that adhere to the principles of accessibility and usability",
-    url: "tea-estation.netlify.app",
+    url: "https://tea-estation.netlify.app",
     skills: ["HTML", "css"],
     service: "website development",
   },
@@ -111,8 +111,16 @@ export const singleProjects = [
     title: "nexter project",
     description:
       "The ReactJS Static Website, meticulously crafted to hone my skills in component-based architecture and maximize code reusability, is an exemplary showcase of streamlined design and efficient development. Built with ReactJS and styled using CSS/SCSS, this project places a strong emphasis on modular components, allowing for seamless reuse and maintenance. The website features a clean and responsive user interface, with each section carefully implemented as a reusable React component, showcasing the power of component-driven development. Leveraging the React ecosystem, the project demonstrates the efficiency of managing state and rendering content dynamically while maintaining a cohesive and visually appealing design. This endeavor not only exemplifies mastery in React and CSS/SCSS but also serves as a testament to the commitment to best practices in frontend development, ensuring scalability, maintainability, and a delightful user experience.",
-    url: "vnexterproject.netlify.app",
+    url: "https://vnexterproject.netlify.app",
     skills: ["HTML", "react.js", "SCSS & CSS"],
+    service: "website development",
+  },
+  {
+    title: "github users",
+    description:
+      "GitHub users is a React-based web application that empowers users to seamlessly explore GitHub profiles, providing a detailed overview of users' activities. Leveraging technologies such as React, Context API, React Router, Auth0, Axios, FusionCharts, and Styled Components, the application ensures a dynamic and secure user experience. Users can search for GitHub profiles, access comprehensive details, and explore activities like followers, following, and top languages used. The integration of Auth0 ensures secure authentication, while Axios facilitates efficient data fetching from the GitHub API. FusionCharts adds visual appeal, presenting insights like most popular repositories and frequently used languages. With a robust stack and a focus on user-friendly design, GitHub Explorer redefines the exploration of GitHub profiles.",
+    url: "https://vgithubuser.netlify.app",
+    skills: [ "react.js", "contextApi", 'styled component','auth0'],
     service: "website development",
   },
 ];

@@ -30,7 +30,7 @@ const SingleProject = () => {
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
         <div className="grid gap-y-2 md:gap-y-0 items-start">
           <div>
-            <span className="text-xl capitalize tracking-wider font-bold">
+            <span className="text-md capitalize tracking-wider font-bold">
               skills :
             </span>
             {skills.map((skill) => {
@@ -42,7 +42,7 @@ const SingleProject = () => {
             })}
           </div>
           <div>
-            <span className="text-xl capitalize tracking-wider font-bold">
+            <span className="text-md capitalize tracking-wider font-bold">
               service :
             </span>
             <span className="text-lg">{service}</span>
