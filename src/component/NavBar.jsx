@@ -38,10 +38,10 @@ const NavBar = () => {
         </div>
         <div className="navbar-center hidden md:!flex">
           <div className="menu  menu-horizontal gap-x-4">
-            {menus.map((menu) => {
+            {menus.map((menu,index) => {
               <li className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300" key={menu.id}>{menu.text}</li>
               return (
-                <Link to={menu.url}>
+                <Link to={menu.url} key={index}>
                   <li
                     className="text-lg border-b border-transparent capitalize hover:border-b hover:border-primary pb-2  transition-all duration-300"
                     key={menu.id}

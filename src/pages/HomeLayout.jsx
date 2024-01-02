@@ -3,7 +3,7 @@ import { menus } from "../utils/data";
 import { Navbar } from "../component";
 import { useNavigation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { Link ,ScrollRestoration} from "react-router-dom";
 
 const HomeLayout = () => {
 
@@ -36,14 +36,17 @@ const HomeLayout = () => {
           {/* Sidebar content here */}
           {menus.map((menu) => {
             return (
-              <Link to={menu.url} >
-                <li
-                  className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 "
-                  key={menu.id}
-                >
-                  {menu.text}
-                </li>
-              </Link>
+
+              <Link to={menu.url}>
+                  <ScrollRestoration/>
+                  <li
+                    className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 "
+                    key={menu.id}
+                  >
+                    {menu.text}
+                  </li>
+                </Link>
+            
             );
           })}
         </ul>

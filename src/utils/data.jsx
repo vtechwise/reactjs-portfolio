@@ -15,7 +15,7 @@ export const menus = [
     url:'/about'
   },
   {
-    id: 13,
+    id: 3,
     text: "projects",
     url:'/projects'
   },
@@ -59,7 +59,7 @@ export const services = [
       "Leveraging Webflow's intuitive platform to design and develop responsive websites seamlessly. Transforming ideas into visually stunning and user-friendly web experiences without extensive coding.",
   },
   {
-    id: "1",
+    id: "3",
     icon: <FaWordpress className="" />,
     title: "wordpress development",
     description:

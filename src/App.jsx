@@ -6,7 +6,6 @@ import { HomeLayout, Landing, Contact, Projects, SingleProject,Error } from "./p
 import {loader as projectsLoader} from './pages/Projects'
 import {loader as singleProjectLoader} from './pages/SingleProject'
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,7 +35,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+
+  return (
+    <>
+      <RouterProvider router={router} />;
+    </>
+  ); 
 }
 
 export default App;
