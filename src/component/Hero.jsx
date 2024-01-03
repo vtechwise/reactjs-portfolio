@@ -7,14 +7,17 @@ const Hero = () => {
     const resumeUrl= 'victor-olabisi cv.pdf'
   return (
     <>
-      <div className="flex flex-col gap-y-10 sm:flex-row gap-x-12 items-center pt-14 md:mb-24" id="home">
+      <div
+        className="flex flex-col gap-y-10 sm:flex-row md:justify-between items-strech pt-14 md:mb-24"
+        id="home"
+      >
         <div className="rounded-lg relative">
           <img
             src={portfolioImg}
-            className="w-screen md:w-[35rem] h-[25rem] md:h-[32rem] object-cover rounded-lg fill-black"
+            className="w-screen md:w-[35rem] h-[25rem] md:h-[40rem] object-cover rounded-lg fill-black"
             alt=""
           />
-          
+
           <button className="btn btn-primary absolute btn- rounded-full left-5  btn-sm bottom-20">
             {" "}
             <span>
@@ -28,19 +31,35 @@ const Hero = () => {
             Available for new projects
           </p>
         </div>
-        <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
-            I craft beautiful and unique products.
-          </h1>
-          <p className="mt-4 leading-7">
-            in my code every details serves a purpose- <br /> orchestrating a
-            digital masterpiece where user experience flow seamlessly{" "}
-          </p>
-          <Link to={'/contact'}>
-            <button className="btn mt-6 btn-primary  rounded-full text-md  ">
-              Work with me
-            </button>
-          </Link>
+        <div className="md:order-first flex flex-col justify-between gap-y-28">
+          <div className="">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
+              I craft beautiful and unique products.
+            </h1>
+            <p className="mt-4 leading-7 text-[1.2rem]">
+              in my code every details serves a purpose- <br /> orchestrating a
+              digital masterpiece where user experience flow seamlessly{" "}
+            </p>
+            <Link to={"/contact"}>
+              <button className="btn mt-6 btn-primary  rounded-full text-md  md:btn-lg ">
+                Work with me
+              </button>
+            </Link>
+          </div>
+          <div className="mb-12 flex gap-x-6">
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-xl flex flex-col justify-end pl-[1.7rem] pb-[1rem] text-black">
+              <h1 className="text-4xl">20</h1>
+              <p className="capitalize font-semibold ">
+                completed project <span></span>
+              </p>
+            </div>
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end pl-[1.7rem] pb-[1rem] text-black rounded-xl">
+              <h1 className="text-4xl">3</h1>
+              <p className="capitalize font-semibold ">
+               years of experience <span></span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="mt-12 grid md:grid-cols-2 ">
