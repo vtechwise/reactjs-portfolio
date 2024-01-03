@@ -3,6 +3,8 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/aboute me.svg'
 import { Link } from "react-router-dom";
+import { MdArrowOutward } from "react-icons/md";
+
 const Hero = () => {
     const resumeUrl= 'victor-olabisi cv.pdf'
   return (
@@ -47,16 +49,22 @@ const Hero = () => {
             </Link>
           </div>
           <div className="mb-12 flex gap-x-6">
-            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-xl flex flex-col justify-end pl-[1.7rem] pb-[1rem] text-black">
-              <h1 className="text-4xl">20</h1>
-              <p className="capitalize font-semibold ">
-                completed project <span></span>
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end px-[1.7rem] pb-[1rem] text-black group">
+              <h4 className="text-5xl">20</h4>
+              <p className="capitalize font-semibold flex justify-between items-start">
+                completed project{" "}
+                <span className="text-3xl group-hover:scale-[1.3] duration-300">
+                  <MdArrowOutward />
+                </span>
               </p>
             </div>
-            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end pl-[1.7rem] pb-[1rem] text-black rounded-xl">
-              <h1 className="text-4xl">3</h1>
-              <p className="capitalize font-semibold ">
-               years of experience <span></span>
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.7rem] pb-[1rem] text-black rounded-lg group">
+              <h4 className="text-5xl">3</h4>
+              <p className="capitalize font-semibold flex justify-between items-start ">
+                years of experience{" "}
+                <span className="text-3xl group-hover:scale-[1.3] duration-300">
+                  <MdArrowOutward />
+                </span>
               </p>
             </div>
           </div>
