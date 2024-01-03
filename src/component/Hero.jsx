@@ -49,20 +49,20 @@ const Hero = () => {
             </Link>
           </div>
           <div className="mb-12 flex gap-x-6">
-            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end px-[1.7rem] pb-[1rem] text-black group">
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
               <h4 className="text-5xl">20</h4>
-              <p className="capitalize font-semibold flex justify-between items-start">
+              <p className="capitalize  flex justify-between items-start">
                 completed project{" "}
-                <span className="text-3xl group-hover:scale-[1.3] duration-300">
+                <span className="text-xl md:text-3xl group-hover:scale-[1.3] duration-300">
                   <MdArrowOutward />
                 </span>
               </p>
             </div>
-            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.7rem] pb-[1rem] text-black rounded-lg group">
+            <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group">
               <h4 className="text-5xl">3</h4>
-              <p className="capitalize font-semibold flex justify-between items-start ">
+              <p className="capitalize  flex justify-between items-start ">
                 years of experience{" "}
-                <span className="text-3xl group-hover:scale-[1.3] duration-300">
+                <span className="text-xl md:text-3xl group-hover:scale-[1.3] duration-300">
                   <MdArrowOutward />
                 </span>
               </p>
