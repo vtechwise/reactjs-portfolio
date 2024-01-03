@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="mb-12 flex gap-x-6">
             <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
               <h4 className="text-3xl">20+</h4>
-              <p className="capitalize  flex gap-x-4 items-start">
+              <p className="capitalize  flex gap-x-4 items-start text-[0.8rem]">
                 completed project{" "}
                 <span className="text-xl md:text-3xl group-hover:scale-[1.3] duration-300">
                   <MdArrowOutward />
@@ -60,7 +60,7 @@ const Hero = () => {
             </div>
             <div className=" h-[9rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group">
               <h4 className="text-3xl">3</h4>
-              <p className="capitalize  flex  gap-x-4 items-start ">
+              <p className="capitalize  flex  gap-x-4 items-start text-[0.8rem] ">
                 years of experience{" "}
                 <span className="text-xl md:text-3xl group-hover:scale-[1.3] duration-300">
                   <MdArrowOutward />
