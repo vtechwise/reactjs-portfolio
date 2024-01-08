@@ -38,7 +38,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
               I craft beautiful and unique products.
             </h1>
-            <p className="mt-4 leading-7 text-[1.2rem]">
+            <p className="mt-4 leading-7 ">
               in my code every details serves a purpose- <br /> orchestrating a
               digital masterpiece where user experience flow seamlessly{" "}
             </p>
