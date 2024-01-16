@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-y-10 sm:flex-row md:justify-between items-strech pt-14 md:mb-24"
+        className="flex flex-col gap-y-10 gap-x-10 sm:flex-row md:justify-between items-strech pt-14 md:mb-24"
         id="home"
       >
         <div className="rounded-lg relative">
@@ -33,7 +33,7 @@ const Hero = () => {
             Available for new projects
           </p>
         </div>
-        <div className="md:order-first flex flex-col justify-between gap-y-28">
+        <div className="sm:order-first flex flex-col justify-between gap-y-28">
           <div className="">
             <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
               I craft beautiful and unique products.
@@ -49,7 +49,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="mb-12 flex gap-x-6">
-            <div className=" h-[7.5rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
+            <div className=" h-[7.5rem] max-w--[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
               <h4 className="text-3xl">20+</h4>
               <p className="capitalize  flex gap-x-4 items-start text-[0.8rem]">
                 completed project{" "}
@@ -58,7 +58,7 @@ const Hero = () => {
                 </span>
               </p>
             </div>
-            <div className=" h-[7.5rem] w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group">
+            <div className=" h-[7.5rem] max-w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group">
               <h4 className="text-3xl">3</h4>
               <p className="capitalize  flex  gap-x-4 items-start text-[0.8rem] ">
                 years of experience{" "}
