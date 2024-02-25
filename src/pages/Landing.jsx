@@ -94,7 +94,7 @@ const Landing = () => {
       </section>
       <section className="grid place-items-center pt-6">
         <div>
-          <p className="capitalize font-semibold text-sm">crafted by victor olabisi</p>
+          <p className="capitalize font-semibold text-sm w-full">crafted by victor olabisi</p>
         </div>
       </section>
     </>
