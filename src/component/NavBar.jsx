@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { menus } from "../utils/data";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import portfolioImg from '../assets/portfolioIm.jpg'
+import portfolioImg from '../assets/avatarImg.jpg'
 const themes = {
     cupcake: 'cupcake',
     dark:'dark'
@@ -38,7 +38,7 @@ const NavBar = () => {
           {/* <Link to={'/'} className="h-8 w-8 bg-primary grid place-items-center rounded-md  "><span className="text-2xl">v</span></Link>
            */}
           <div className="flex items-center justify-items-center ">
-            <img src={portfolioImg} className=" w-[2.5rem] rounded-[100%]" alt="" />
+            <img src={portfolioImg} className=" w-[3rem] h-[3rem] object-cover rounded-[100%]" alt="" />
             <span className="ml-4 capitalize " >victor olabisi</span>
           </div>
         </div>
