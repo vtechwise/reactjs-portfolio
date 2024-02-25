@@ -10,7 +10,7 @@ export default {
     },
   },
   plugins: [],
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui", "tw-elements-react/dist/plugin.cjs")],
   daisyui: {
     themes: ["light", "dark", "cupcake"],
   },
