@@ -38,7 +38,7 @@ const NavBar = () => {
           {/* <Link to={'/'} className="h-8 w-8 bg-primary grid place-items-center rounded-md  "><span className="text-2xl">v</span></Link>
            */}
           <div className="flex items-center justify-items-center ">
-            <img src={portfolioImg} className=" w-[2.5rem] h-[2.5rem] object-cover rounded-[100%]" alt="" />
+            <img src={portfolioImg} className=" w-[2.1rem] h-[2.1rem] object-cover rounded-[100%]" alt="" />
             <span className="ml-4 capitalize " >victor olabisi</span>
           </div>
         </div>
