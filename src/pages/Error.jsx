@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
-    <div className="grid h-screen place-items-center">
+    <div className="grid h-screen place-items-center p-6">
       <div className="text-center -translate-y-10">
         <p className="text-6xl md:text-9xl mb-4 capitalize font-bold">404</p>
 
