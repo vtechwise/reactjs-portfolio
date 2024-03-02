@@ -120,8 +120,16 @@ export const singleProjects = [
     description:
       "GitHub users is a React-based web application that empowers users to seamlessly explore GitHub profiles, providing a detailed overview of users' activities. Leveraging technologies such as React, Context API, React Router, Auth0, Axios, FusionCharts, and Styled Components, the application ensures a dynamic and secure user experience. Users can search for GitHub profiles, access comprehensive details, and explore activities like followers, following, and top languages used. The integration of Auth0 ensures secure authentication, while Axios facilitates efficient data fetching from the GitHub API. FusionCharts adds visual appeal, presenting insights like most popular repositories and frequently used languages. With a robust stack and a focus on user-friendly design, GitHub Explorer redefines the exploration of GitHub profiles.",
     url: "https://vgithubuser.netlify.app",
-    skills: [ "react.js", "contextApi", 'styled component','auth0'],
+    skills: ["react.js", "contextApi", "styled component", "auth0"],
     service: "website development",
+  },
+  {
+    title: "hernandez landscape",
+    description:
+      "I am thrilled to present Hernandez Landscape, a captivating WordPress site I developed to showcase stunning landscapes across the USA! This project aimed to inspire exploration of nature's wonders, from the iconic Grand Canyon to the serene beauty of New England's rolling hills. Through high-quality images, videos, and interactive galleries, Hernandez Landscape offers a visual feast of the diverse American landscapes. Additionally, the site provides valuable resources on gardening, sustainable practices, and landscape design, all tailored for the American audience.",
+    url: "https://hernandezlandscapes.com/",
+    skills: ['wordpress'],
+    service: "wordpress development",
   },
 ];
 
