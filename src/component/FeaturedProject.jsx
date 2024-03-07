@@ -10,13 +10,23 @@ const FeaturedProject = () => {
       <SectionTitle text="my creations" />
       <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10">
         {featuredProject.map((project) => {
-          const { id, image, title } = project
-         return (
-           <Project key={project.id} {...project} />
-         );
-       })}
+          const { id, image, title } = project;
+          return <Project key={project.id} {...project} />;
+        })}
       </div>
-<Link to={'/projects'} className="flex md:justify-end"> <button className="btn btn-primary rounded-full capitalize mt-8 ">  View all works</button> </Link>
+      <div
+        className="flex md:justify-end"
+        // style={{ display: "inline-block" }}
+      >
+        {" "}
+        <Link
+          to={"/projects"}
+          className="btn btn-primary rounded-full capitalize mt-8"
+        >
+          {" "}
+          View all works
+        </Link>{" "}
+      </div>
     </section>
   );
 };

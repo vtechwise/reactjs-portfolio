@@ -1,5 +1,5 @@
 import { Hero, FeaturedProject, Services, SectionTitle } from "../component";
-import contactImg from  '../assets/contact-us.svg'
+import contactImg from "../assets/contact-us.svg";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { TERipple } from "tw-elements-react";
 
@@ -18,14 +18,17 @@ const Landing = () => {
             <p>
               if you need a modern and powerful website for your
               business,startup or yourself, i am available for work.
-              <Link
-                to={"/contact"}
+              <div
                 className=" font-bold   grid place-items-center "
+                // style={{display:'block'}}
               >
-                <button className="btn-primary btn block mt-6 text-center rounded-full text-lg ">
+                <Link
+                  to={"/contact"}
+                  className="btn-primary btn btn-md  mt-6 text-center rounded-full text-lg "
+                >
                   contact us
-                </button>
-              </Link>{" "}
+                </Link>
+              </div>
             </p>
           </div>
           <div className="faq mt-6 hidden md:block">
