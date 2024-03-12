@@ -1,4 +1,4 @@
-import portfolioImg from "../assets/fineImg.jpg";
+import portfolioImg from "../assets/avatarImg.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/aboute me.svg'
