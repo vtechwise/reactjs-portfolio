@@ -63,7 +63,7 @@ export const services = [
     icon: <FaWordpress className="" />,
     title: "wordpress development",
     description:
-      "Harnessing the power of WordPress as a content management system to create diverse websites. From blogs to e-commerce platforms, utilizing themes and plugins to customize designs and functionalities for optimal user engagement.",
+      "Harnessing the power of WordPress as a content management system to create websites. From blogs to e-commerce platforms, utilizing themes and plugins to customize designs and functionalities for optimal user engagement.",
   },
 ];
 
