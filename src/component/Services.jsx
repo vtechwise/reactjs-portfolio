@@ -12,7 +12,7 @@ const Services = () => {
           return (
             <article
               key={id}
-              className="bg-base-300 border-b-4 border-primary p-10 rounded-xl "
+              className="bg-base-300 border-b-4 border-primary p-6 rounded-xl "
             >
               <span className="text-5xl inline-block pb-2">{icon}</span>
               <h2 className="text-2xl pb-4 capitalize font-semibold">
