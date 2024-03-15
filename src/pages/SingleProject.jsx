@@ -12,7 +12,7 @@ export const loader = ({ params }) => {
 
 const SingleProject = () => {
   const { singleProject } = useLoaderData();
-  const { title, description, url, skills, service } = singleProject;
+  const { title, description, url, stack, service } = singleProject;
   // console.log(skills);
   return (
     <section className="section-margin">
@@ -31,13 +31,13 @@ const SingleProject = () => {
         <div className="grid gap-y-2 md:gap-y-0 items-start">
           <div>
             <span className="text-md capitalize tracking-wider font-bold">
-              skills :
+              stack : 
             </span>
-            {skills.map((skill) => {
+            {stack.map((skill) => {
               return (
                 <span className="text-lg">{`${
-                  skill.length > 1 ? `${skill} ,` : " "
-                }`}</span>
+                  skill.length > 1 ? ` ${skill}, ` : ''
+                }` }</span>
               );
             })}
           </div>
@@ -45,7 +45,7 @@ const SingleProject = () => {
             <span className="text-md capitalize tracking-wider font-bold">
               service :
             </span>
-            <span className="text-lg">{service}</span>
+            <span className="text-lg capitalize"> {service}.</span>
           </div>
           <a href={url} target="blank">
             <button className="btn btn-primary rounded-full mt-4">
@@ -53,8 +53,8 @@ const SingleProject = () => {
             </button>
           </a>
         </div>
-        <div className="grid gap-y-6">
-          <h2 className="text-3xl tracking-wider font-semibold">
+        <div className="grid gap-y-2">
+          <h2 className="text-2xl tracking-wider font-semibold">
             project overview
           </h2>
           <p className="leading-8">{description}</p>
