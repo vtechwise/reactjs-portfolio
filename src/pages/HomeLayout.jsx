@@ -16,7 +16,7 @@ const HomeLayout = () => {
         <Navbar />
         <section className="align-element pt-16 mb-6">
           {isLoading ? (
-            <section className="h-screen grid place-items-center">
+            <section className="h-[85vh] grid place-items-center">
               <div className="loading loading-spinner"></div>
             </section>
           ) : (
