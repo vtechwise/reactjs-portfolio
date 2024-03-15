@@ -3,19 +3,11 @@ import { menus } from "../utils/data";
 import { Navbar } from "../component";
 import { useNavigation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Link ,ScrollRestoration} from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const HomeLayout = () => {
-
- const navigate = useNavigation();
- const isLoading = navigate.state === "loading";
- if (isLoading) {
-   return (
-     <section className="h-screen grid place-items-center">
-       <div className="loading loading-spinner">bbbb</div>
-     </section>
-   );
- }
+  const navigate = useNavigation();
+  const isLoading = navigate.state === "loading";
 
   return (
     <div className="drawer drawer-end ">
@@ -23,7 +15,13 @@ const HomeLayout = () => {
       <div className="drawer-content">
         <Navbar />
         <section className="align-element pt-16 mb-6">
-          <Outlet />
+          {isLoading ? (
+            <section className="h-screen grid place-items-center">
+              <div className="loading loading-spinner"></div>
+            </section>
+          ) : (
+            <Outlet />
+          )}
         </section>
       </div>
       <div className="drawer-side z-20 ">
@@ -36,22 +34,20 @@ const HomeLayout = () => {
           {/* Sidebar content here */}
           {menus.map((menu) => {
             return (
-
               <Link to={menu.url}>
-                  <ScrollRestoration/>
-                  <li
-                    className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 "
-                    key={menu.id}
-                  >
-                    {menu.text}
-                  </li>
-                </Link>
-            
+                <ScrollRestoration />
+                <li
+                  className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 "
+                  key={menu.id}
+                >
+                  {menu.text}
+                </li>
+              </Link>
             );
           })}
         </ul>
       </div>
     </div>
   );
-}
-export default HomeLayout
+};
+export default HomeLayout;
