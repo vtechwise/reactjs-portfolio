@@ -58,7 +58,7 @@ const SingleProject = () => {
           </h2>
           <p className="leading-8">{description}</p>
           <a href={url} target="blank">
-            <button className="btn btn-primary rounded-sm mt-4 text-lg">
+            <button className="btn btn-primary rounded-sm mt-4 ">
               visit website
             </button>
           </a>
