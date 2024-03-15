@@ -51,17 +51,17 @@ const SingleProject = () => {
             </span>
             <span className="text-lg capitalize"> {service}.</span>
           </div>
-          <a href={url} target="blank">
-            <button className="btn btn-primary rounded-sm mt-4">
-              visit website
-            </button>
-          </a>
         </div>
         <div className="grid gap-y-2">
           <h2 className="text-2xl tracking-wider font-semibold">
             project overview
           </h2>
           <p className="leading-8">{description}</p>
+          <a href={url} target="blank">
+            <button className="btn btn-primary rounded-sm mt-4 text-lg">
+              visit website
+            </button>
+          </a>
         </div>
       </div>
     </section>
