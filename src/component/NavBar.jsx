@@ -10,7 +10,7 @@ const themes = {
     dark:'dark'
 }
 const getThemeFromLocalStorage = () => {
-   return localStorage.getItem('theme') || themes.dark
+   return localStorage.getItem('theme') || themes.cupcake
 }
 
 
