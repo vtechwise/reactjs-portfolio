@@ -1,6 +1,6 @@
 import { SectionTitle } from "../component";
 import { singleProjects } from "../utils/data";
-import { useLoaderData } from "react-router-dom";
+import { Navigate, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 export const loader = ({ params }) => {
   const title = params.id;
@@ -12,7 +12,10 @@ export const loader = ({ params }) => {
 
 const SingleProject = () => {
   const { singleProject } = useLoaderData();
+
+  if (!singleProject) return <Navigate to={"/"} />;
   const { title, description, url, stack, service } = singleProject;
+
   // console.log(skills);
   return (
     <section className="section-margin">
@@ -28,27 +31,28 @@ const SingleProject = () => {
       </div>
       <SectionTitle text={title} />
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
-        <div className="grid gap-y-2 md:gap-y-0 items-start">
+        <div className="grid gap-y-4 md:gap-y-0 items-start">
           <div>
-            <span className="text-md capitalize tracking-wider font-bold">
-              stack : 
+            <span className="text-md capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
+              stack :
             </span>
-            {stack.map((skill) => {
+            {stack.map((skill, index) => {
               return (
-                <span className="text-lg">{`${
-                  skill.length > 1 ? ` ${skill}, ` : ''
-                }` }</span>
+                <span className="text-lg">
+                  {skill}
+                  {index < stack.length - 1 ? "," : " "}{" "}
+                </span>
               );
             })}
           </div>
           <div>
-            <span className="text-md capitalize tracking-wider font-bold">
+            <span className="text-md capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
               service :
             </span>
             <span className="text-lg capitalize"> {service}.</span>
           </div>
           <a href={url} target="blank">
-            <button className="btn btn-primary rounded-full mt-4">
+            <button className="btn btn-primary rounded-sm mt-4">
               visit website
             </button>
           </a>
