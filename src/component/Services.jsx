@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section className="section-margin">
       <SectionTitle text="services" />
-      <div className="grid gap-y-10 sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+      <div className="grid gap-y-10 sm:grid-cols-2 md:grid-cols-3 gap-x-10 pb-6">
         {services.map((service) => {
           const { id, title, description, icon } = service;
           return (
