@@ -10,7 +10,7 @@ export const loader = ({ params }) => {
   return { singleProject };
 };
 
-const SingleProject = () => {
+const SingleProject = () => { 
   const { singleProject } = useLoaderData();
 
   if (!singleProject) return <Navigate to={"/"} />;

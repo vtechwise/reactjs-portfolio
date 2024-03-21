@@ -2,6 +2,7 @@ import { services } from "../utils/data";
 import SectionTitle from "./SectionTitle";
 import { FaReact } from "react-icons/fa";
 import servicesImg from "../assets/services.jpg";
+import InfinteScroll from "./InfinteScroll";
 const Services = () => {
   return (
     <section className="section-margin">
@@ -23,6 +24,7 @@ const Services = () => {
           );
         })}
       </div>
+      <InfinteScroll/>
       <div className="mt-16 grid sm:grid-cols-2  gap-x-20 md:mt-24">
         <img src={servicesImg} alt="" className="rounded-lg mb-4" />
         <div className="flex flex-col justify-between gap-y-20">
