@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        marque: "marque 25s linear infinite",
-        marque2: "marque2 25s linear infinite",
+        marque: "marque 32s linear infinite",
+        marque2: "marque2 32s linear infinite",
       },
       keyframes: {
         marque: {
