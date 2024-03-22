@@ -1,4 +1,4 @@
-import { Hero, FeaturedProject, Services, SectionTitle } from "../component";
+import { Hero, FeaturedProject, Services, SectionTitle, Skills } from "../component";
 import contactImg from "../assets/contact-us.svg";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { TERipple } from "tw-elements-react";
@@ -9,6 +9,7 @@ const Landing = () => {
       {/* <ScrollRestoration/> */}
       <Hero />
       <FeaturedProject />
+      <Skills/>
       <Services />
       <section className="section-margin">
         <SectionTitle text="want to work" />
