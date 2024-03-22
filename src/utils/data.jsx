@@ -133,6 +133,12 @@ export const singleProjects = [
   },
 ];
 
+export const skills = [
+  {
+    skill: 'react & redux',
+    icon:<FaReact/>
+  }
+]
 
 
 
