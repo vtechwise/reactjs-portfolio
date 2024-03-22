@@ -1,6 +1,6 @@
 const InfinteScroll = () => {
   return (
-    <div className="relative flex overflow-x-hidden w-[100vh]">
+    <div className="relative flex overflow-x-hidden ">
       <div className="py-12 animate-marque whitespace-nowrap text-base-300 font-bold text-7xl">
         <span className=" uppercase ">frontend + </span>
         <span className=" uppercase ">webflow + </span>
