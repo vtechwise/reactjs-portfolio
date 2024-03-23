@@ -55,7 +55,7 @@ const Skills = () => {
                   key={skill}
                   className="flex justify-between border-b border-b-[0.2rem] border-b-primary mb-8 pb-4"
                 >
-                  <h4 className="text-xl font-bold capitalize">{skill}</h4>
+                  <h4 className="text-xl font-semibold capitalize">{skill}</h4>
                   <span className="text-[1.5rem]">{icon}</span>
                 </div>
               );
