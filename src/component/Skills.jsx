@@ -23,8 +23,8 @@ const Skills = () => {
             <span>
               <BiCodeCurly className="text-[3rem] fill-primary " />
             </span>
-            <h4 className="text-2xl capitalize font-bold">
-              frontend engineeering
+            <h4 className="text-xl capitalize font-bold">
+              frontend engineering
             </h4>
             <div className="relative mr-10 ">
               <span>
@@ -73,8 +73,8 @@ const Skills = () => {
             <span>
               <BiCodeCurly className="text-[3rem] fill-primary " />
             </span>
-            <h4 className="text-2xl capitalize font-bold">
-              frontend engineeering
+            <h4 className="text-xl capitalize font-bold">
+              frontend engineering
             </h4>
             <div className="relative mr-10 ">
               <span>
