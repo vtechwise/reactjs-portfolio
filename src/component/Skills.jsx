@@ -6,7 +6,7 @@ import { useState } from "react";
 import { skills } from "../utils/data";
 
 const Skills = () => {
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
   return (
     <section>
       <SectionTitle text="skills" />
@@ -48,7 +48,7 @@ const Skills = () => {
           {skills.map((skillz) => {
             const { icon, skill } = skillz;
             return (
-              <div key={skill} className="flex justify-between border-b border-b-4 border-b-primary pb-4">
+              <div key={skill} className="flex justify-between border-b border-b-[0.2rem] border-b-primary mb-8 pb-4">
                 <h4 className="text-xl font-bold capitalize">{skill}</h4>
                 <span className="text-[1.5rem]">{icon}</span>
               </div>

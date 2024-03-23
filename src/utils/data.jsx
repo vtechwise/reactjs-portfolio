@@ -135,10 +135,26 @@ export const singleProjects = [
 
 export const skills = [
   {
-    skill: 'react & redux',
-    icon:<FaReact/>
-  }
-]
+    skill: "react & redux",
+    icon: <FaReact />,
+  },
+  {
+    skill: "HTML | CSS | Sass",
+    icon: <FaReact />,
+  },
+  {
+    skill: "javascript | typescript",
+    icon: <FaReact />,
+  },
+  {
+    skill: "tailwind css",
+    icon: <FaReact />,
+  },
+  {
+    skill: "node.js",
+    icon: <FaReact />,
+  },
+];
 
 
 
