@@ -3,7 +3,7 @@ import { BiCodeCurly } from "react-icons/bi";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
-import { skills } from "../utils/data";
+import { skill2, skills } from "../utils/data";
 
 const Skills = () => {
   const [showFirstContent, setShowFirstContent] = useState(true);
@@ -12,7 +12,7 @@ const Skills = () => {
     <section>
       <SectionTitle text="skills" />
       <div className="grid md:grid-cols-2 gap-x-6 gap-y-14 md:gap-y-0">
-        <article className="">
+        <article className="relative ">
           <div
             className={`content-title skill grid grid-cols-[auto,1fr,auto] items-center align-start gap-x-4 cursor-pointer`}
             onClick={() => {
@@ -37,7 +37,7 @@ const Skills = () => {
               <span>
                 <MdOutlineKeyboardArrowDown
                   className={`${
-                    showFirstContent ? "opacity-0" : "opacity-100"
+                    showFirstContent ? "opacity-0 " : "opacity-100"
                   } text-[3rem] fill-primary absolute top-0 translate-y-[-1.2rem] transition duration-300`}
                 />
               </span>
@@ -45,8 +45,8 @@ const Skills = () => {
           </div>
           <div
             className={`${
-              showFirstContent ? "display-block" : "display-none hidden"
-            } pl-[4rem] pt-9`}
+              showFirstContent ? "translate-y-[0] " : "display-none  fixed opacity-1  translate-y-[100%]"
+            } pl-[4rem] pt-9  transition duration-500 `}
           >
             {skills.map((skillz) => {
               const { icon, skill } = skillz;
@@ -74,7 +74,7 @@ const Skills = () => {
               <BiCodeCurly className="text-[3rem] fill-primary " />
             </span>
             <h4 className="text-xl capitalize font-bold">
-              frontend engineering
+              CMS development
             </h4>
             <div className="relative mr-10 ">
               <span>
@@ -95,10 +95,10 @@ const Skills = () => {
           </div>
           <div
             className={`${
-              showSecondContent ? "display-block" : "display-none hidden"
-            } pl-[4rem] pt-9`}
+              showSecondContent ? "translate-y-[0]" : "translate-y-[100%]  fixed opacity-0"
+            } pl-[4rem] pt-9 transition duration-500`}
           >
-            {skills.map((skillz) => {
+            {skill2.map((skillz) => {
               const { icon, skill } = skillz;
               return (
                 <div

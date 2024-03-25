@@ -157,6 +157,26 @@ export const skills = [
 ];
 
 
+export const skill2 = [
+  {
+    skill: "webflow",
+    icon: <FaReact />,
+  },
+  {
+    skill: "wordpress",
+    icon: <FaReact />,
+  },
+  {
+    skill: "wix",
+    icon: <FaReact />,
+  },
+  {
+    skill: "shopify",
+    icon: <FaReact />,
+  },
+ 
+];
+
 
 
 
