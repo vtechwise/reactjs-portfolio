@@ -1,6 +1,15 @@
 import { FaReact } from "react-icons/fa";
 import { TbBrandWebflow } from "react-icons/tb";
 import { FaWordpress } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
+import { FaWix } from "react-icons/fa";
+
+
+
+
 // const space = ty6v85dqhyv5;
 //  const token = hCzQeZhzB2usfuMwbr4KVismWDbt6 - aPRaoeorEcnx0;
 export const menus = [
@@ -140,19 +149,19 @@ export const skills = [
   },
   {
     skill: "HTML | CSS | Sass",
-    icon: <FaReact />,
+    icon: <FaHtml5 />,
   },
   {
     skill: "javascript | typescript",
-    icon: <FaReact />,
+    icon: <TbBrandJavascript />,
   },
   {
     skill: "tailwind css",
-    icon: <FaReact />,
+    icon: <SiTailwindcss />,
   },
   {
     skill: "node.js",
-    icon: <FaReact />,
+    icon: <IoLogoNodejs />,
   },
 ];
 
@@ -160,15 +169,15 @@ export const skills = [
 export const skill2 = [
   {
     skill: "webflow",
-    icon: <FaReact />,
+    icon: <TbBrandWebflow />,
   },
   {
     skill: "wordpress",
-    icon: <FaReact />,
+    icon: <FaWordpress />,
   },
   {
     skill: "wix",
-    icon: <FaReact />,
+    icon: <FaWix />,
   },
   {
     skill: "shopify",
