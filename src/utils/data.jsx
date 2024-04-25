@@ -137,8 +137,23 @@ export const singleProjects = [
     description:
       "I am thrilled to present Hernandez Landscape, a captivating WordPress site I developed to showcase stunning landscapes across the USA! This project aimed to inspire exploration of nature's wonders, from the iconic Grand Canyon to the serene beauty of New England's rolling hills. Through high-quality images, videos, and interactive galleries, Hernandez Landscape offers a visual feast of the diverse American landscapes. Additionally, the site provides valuable resources on gardening, sustainable practices, and landscape design, all tailored for the American audience.",
     url: "https://hernandezlandscapes.com/",
-    stack: ['wordpress'],
+    stack: ["wordpress"],
     service: "wordpress development",
+  },
+  {
+    title: "sweftpay",
+    description:
+      "SweftPay, a collaborative effort in transforming mobile transactions, features a user-friendly website aimed at raising awareness about the convenience of mobile transactions through our mobile app, available for download on Google Play Store and the App Store. As one of the developers behind this initiative, our platform serves as a gateway for users to discover the seamless experience of purchasing airtime, subscribing to data plans, and conducting virtual payments through our mobile app interface. Prioritizing accessibility, convenience, and security, SweftPay empowers users with information and resources to embrace efficient solutions for their everyday financial needs, ultimately fostering connectivity and financial inclusion for all.",
+    url: "https://sweftpay.com/",
+    stack: ["react.js", "tailwind css"],
+    service: "website development",
+  },
+  {
+    title: "starx",
+    description:
+      "The StarX NFT Landing Page epitomizes excellence in web development, meticulously engineered with React.js and TailwindCSS. Serving as a beacon of proficiency, this platform showcases the seamless fusion of Tailwind's utility-first approach with React.js components, demonstrating mastery in crafting captivating user interfaces. Engineered for responsiveness and peak performance",
+    stack: ["react.js", "tailwind css"],
+    service: "website development",
   },
 ];
 
