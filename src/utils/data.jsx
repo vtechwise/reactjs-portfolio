@@ -152,6 +152,7 @@ export const singleProjects = [
     title: "starx",
     description:
       "The StarX NFT Landing Page epitomizes excellence in web development, meticulously engineered with React.js and TailwindCSS. Serving as a beacon of proficiency, this platform showcases the seamless fusion of Tailwind's utility-first approach with React.js components, demonstrating mastery in crafting captivating user interfaces. Engineered for responsiveness and peak performance",
+    url:'https://vnft-landingpage.netlify.app/',
     stack: ["react.js", "tailwind css"],
     service: "website development",
   },
