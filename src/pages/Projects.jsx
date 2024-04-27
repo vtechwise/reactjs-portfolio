@@ -2,7 +2,7 @@ import { useFetchProjects } from "../utils/fetchProjects"
 import { redirect, useLoaderData } from "react-router-dom";
 import { createClient } from "contentful";
 import { useNavigation } from "react-router-dom";
-import { Project, SectionTitle } from "../component";
+import { LinkPage, Project, SectionTitle } from "../component";
 import FilterBtn from "../component/FilterBtn";
 import { useState } from "react";
 
@@ -67,7 +67,9 @@ const Projects = () => {
         return <Project {...project} key={project.id} />;
       })}
         {/* <Project projects={projects} /> */}
-    </div>
+      </div>
+      
+      <LinkPage text='Contact us'/>
       </section>
   );
 }

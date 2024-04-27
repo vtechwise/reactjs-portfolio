@@ -1,10 +1,11 @@
-import { SectionTitle } from "../component"
-import aboutImage1 from '../assets/about.jpg'
+import { LinkPage, SectionTitle } from "../component";
+import aboutImage1 from "../assets/about.jpg";
 import aboutImage2 from "../assets/about2.jpg";
-import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { MdOutlineFileDownload } from "react-icons/md";
+// import { Link } from "react-router-dom";
 
-
+const resumeUrl = "victor-olabisi cv.pdf";
 const About = () => {
   return (
     <section>
@@ -35,15 +36,41 @@ const About = () => {
             latest industry trends. Let's collaborate and bring innovative ideas
             to life!
           </p>
+          <div className="flex flex-col gap-y-3 mt-6">
+            <div className="flex items-center gap-x-2">
+              <span className="capitalize font-bold">email : </span>
+              <p> oguntayovictor65@gamail.com</p>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <span className="capitalize font-bold">phone number : </span>
+              <p>+2345130887338</p>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <span className="capitalize font-bold">nationality :</span>
+              <p>Nigerian</p>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <span className="capitalize font-bold">education level : </span>
+              <p>Graduate</p>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <span className=" font-bold">Years of experience :</span>
+              <p>3+ years</p>
+            </div>
+          </div>
+
+          <a href={resumeUrl}>
+            <button className="btn btn-sm mt-6 btn-primary rounded-xl">
+              <span>
+                <MdOutlineFileDownload />
+              </span>
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
-      <Link to={'/projects'} className="mt-8 flex items-center gap-x-2 ">
-        <h3 className="text-lg font-semibold ">See my project </h3>
-        <span className="translate-y-[10%]">
-          <FaArrowRight />
-        </span>
-      </Link>
+      <LinkPage text="See my project" link="/projects" />
     </section>
   );
-}
-export default About
+};
+export default About;

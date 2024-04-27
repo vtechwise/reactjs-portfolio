@@ -1,4 +1,4 @@
-import { SectionTitle } from "../component";
+import { LinkPage, SectionTitle } from "../component";
 import contactImg from "../assets/contact-us.svg";
 import { LuLinkedin } from "react-icons/lu";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -165,6 +165,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <LinkPage text={'Back home'} link={'/'}/>
     </section>
   );
 };
