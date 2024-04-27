@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
         <div className="sm:order-first flex flex-col justify-between gap-y-28">
           <div className="">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
               I craft beautiful and unique products.
             </h1>
             <p className="mt-4 leading-7 ">
