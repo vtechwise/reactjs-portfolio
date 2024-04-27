@@ -1,27 +1,67 @@
 import { SectionTitle } from "../component";
 import contactImg from "../assets/contact-us.svg";
+import { LuLinkedin } from "react-icons/lu";
+import { FaRegEnvelope } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+
+
 
 const Contact = () => {
   return (
     <section className="my-16">
-      <SectionTitle text='lets talk' />
-      <div className="grid place-items-center">
+      <SectionTitle text="lets talk" />
+      {/* <div className="grid place-items-center">
         <img src={contactImg} alt="" />
+      </div> */}
+      <div className="flex flex-col gap-y-8 mb-16 sm:flex-row justify-center gap-x-20">
+        <div className="flex gap-x-2 items-center">
+          <span className="text-primary text-3xl">
+            <LuLinkedin />
+          </span>
+          <div>
+            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
+              connect
+            </h5>
+            <a href="">Linkedin</a>
+          </div>
+        </div>
+        <div className="flex gap-x-2 items-center">
+          <span className="text-primary text-3xl">
+            <FaRegEnvelope />
+          </span>
+          <div>
+            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
+              email
+            </h5>
+            <a href="">Linkedin</a>
+          </div>
+        </div>
+        <div className="flex gap-x-2 items-center">
+          <span className="text-primary text-3xl">
+            <IoLocationOutline />
+          </span>
+          <div>
+            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
+              location
+            </h5>
+            <a href="">Nigeria Akure</a>
+          </div>
+        </div>
       </div>
-      <div className="grid md:grid-cols-2 md:gap-x-20 mt-20">
-        <form action="" className="mt-10">
+      <div className="grid md:grid-cols-2 md:gap-x-20 ">
+        <form action="" className="">
           <div className="form-control">
             <label htmlFor="" className="label capitalize">
-              <span className="label-text">first name</span>
+              <span className="label-text"> name</span>
             </label>
             <input
               type="text"
-              className=" input input-bordered"
+              className=" input input-bordered bg-base-300 border-none outline-none rounded-lg"
               name="first name"
               required
             />
           </div>
-          <div className="form-control">
+          {/* <div className="form-control">
             <label htmlFor="" className="label capitalize">
               <span className="label-text">last name</span>
             </label>
@@ -31,7 +71,7 @@ const Contact = () => {
               name="last name"
               required
             />
-          </div>
+          </div> */}
           <div className="form-control">
             <label htmlFor="email" className="label capitalize">
               <span className="label-text">email</span>
@@ -39,7 +79,7 @@ const Contact = () => {
             <input
               required
               type="email"
-              className=" input input-bordered "
+              className=" input bg-base-300 border-none outline-none rounded-lg"
               name="email"
             />
           </div>
@@ -52,9 +92,9 @@ const Contact = () => {
               required
               cols="30"
               rows="10"
-              className="textarea textarea-bordered "
+              className="textarea resize-none textarea-bordered bg-base-300 border-none outline-none rounded-lg"
             ></textarea>
-            <button className="btn btn-primary mt-4">submit</button>
+            <button className="btn btn-primary mt-4 rounded-xl">submit</button>
           </div>
         </form>
         <div className="faq mt-6">

@@ -2,6 +2,9 @@ import { Hero, FeaturedProject, Services, SectionTitle, Skills } from "../compon
 import contactImg from "../assets/contact-us.svg";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { TERipple } from "tw-elements-react";
+import { useState } from "react";
+
+
 
 const Landing = () => {
   return (
@@ -25,7 +28,7 @@ const Landing = () => {
               >
                 <Link
                   to={"/contact"}
-                  className="btn-primary btn btn-md  mt-6 text-center rounded-full text-lg "
+                  className="btn-primary btn btn-md  mt-6 text-center  rounded-full text-lg "
                 >
                   contact us
                 </Link>
@@ -102,9 +105,9 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="grid place-items-center pt-6">
+      <section className="grid place-items-center pt-6 ">
         <div>
-          <p className="capitalize font-semibold text-sm w-full">
+          <p className="capitalize font-semibold text-sm w-full ">
             crafted by victor olabisi
           </p>
           <div className="flex gap-x-3 justify-center mt-4 ">

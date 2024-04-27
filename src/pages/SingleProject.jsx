@@ -54,7 +54,7 @@ const SingleProject = () => {
         </div>
         <div className="grid gap-y-2">
           <h2 className="text-2xl tracking-wider font-semibold">
-            project overview
+            Project overview
           </h2>
           <p className="leading-8">{description}</p>
           <a href={url} target="blank">
