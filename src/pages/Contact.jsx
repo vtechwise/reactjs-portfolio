@@ -33,7 +33,7 @@ const Contact = () => {
             <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
               email
             </h5>
-            <a href="">Linkedin</a>
+            <a href="">oguntayovictor65@gmail.com</a>
           </div>
         </div>
         <div className="flex gap-x-2 items-center">
