@@ -1,7 +1,7 @@
 // import './App.css'
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HomeLayout, Landing, Contact, Projects, SingleProject,Error } from "./pages";
+import { HomeLayout, Landing, Contact, Projects, SingleProject,Error,About } from "./pages";
 
 import {loader as projectsLoader} from './pages/Projects'
 import {loader as singleProjectLoader} from './pages/SingleProject'
@@ -10,11 +10,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-    errorElement:<Error/>,
+    errorElement: <Error />,
     children: [
       {
         index: true,
-        element: <Landing />, 
+        element: <Landing />,
       },
       {
         path: "contact",
@@ -28,7 +28,11 @@ const router = createBrowserRouter([
       {
         path: "project/:id",
         element: <SingleProject />,
-        loader:singleProjectLoader
+        loader: singleProjectLoader,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },
