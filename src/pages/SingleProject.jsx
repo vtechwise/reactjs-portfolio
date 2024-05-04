@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { SectionTitle } from "../component";
 import { singleProjects } from "../utils/data";
 import { Navigate, useLoaderData } from "react-router-dom";
@@ -10,11 +11,30 @@ export const loader = ({ params }) => {
   return { singleProject };
 };
 
-const SingleProject = () => { 
+const SingleProject = () => {
   const { singleProject } = useLoaderData();
+  const [loading, setLoading] = useState(true);
 
   if (!singleProject) return <Navigate to={"/"} />;
   const { title, description, url, stack, service } = singleProject;
+
+  function setLoadingFalse() {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }
+
+  useEffect(() => {
+    setLoadingFalse();
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="h-[85vh] grid place-items-center">
+        <div className="loading loading-spinner"></div>
+      </section>
+    );
+  }
 
   // console.log(skills);
   return (

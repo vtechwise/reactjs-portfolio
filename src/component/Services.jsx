@@ -62,7 +62,7 @@ const Services = () => {
                   className="w-8 inline-block pr-2"
                 />
                 github
-              </div>{" "}
+              </div>
               <div className="text-lg capitalize border-2 inline-block py-2 px-4 rounded-full border-base-300  w-36">
                 <img
                   src="./netlify.png"
