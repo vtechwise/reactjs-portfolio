@@ -39,11 +39,11 @@ const About = () => {
           <div className="flex flex-col gap-y-3 mt-6">
             <div className="flex items-center gap-x-2">
               <span className="capitalize font-bold">email : </span>
-              <p> oguntayovictor65@gamail.com</p>
+              <p> oguntayovictor65@gmail.com</p>
             </div>
             <div className="flex items-center gap-x-2">
               <span className="capitalize font-bold">phone number : </span>
-              <p>+2345130887338</p>
+              <p>+2348130887338</p>
             </div>
             <div className="flex items-center gap-x-2">
               <span className="capitalize font-bold">nationality :</span>
@@ -60,7 +60,7 @@ const About = () => {
           </div>
 
           <a href={resumeUrl}>
-            <button className="btn btn-sm mt-6 btn-primary rounded-xl">
+            <button className="btn  mt-6 btn-primary rounded-xl">
               <span>
                 <MdOutlineFileDownload />
               </span>

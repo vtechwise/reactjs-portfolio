@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <section className="my-16">
+    <section className="mt-16">
       <SectionTitle text="lets talk" />
       {/* <div className="grid place-items-center">
         <img src={contactImg} alt="" />

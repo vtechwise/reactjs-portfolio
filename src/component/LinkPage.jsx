@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 
 const LinkPage = ({text, link}) => {
   return (
-    <Link to={link} className="mt-12 flex items-center gap-x-2 ">
-      <h3 className="text-lg font-semibold ">{text}</h3>
-      <span className="translate-y-[10%]">
-        <FaArrowRight />
-      </span>
+    <Link to={link}>
+      <div className="mt-16 lg:mt-20 inline-block items-center gap-x-2 group ">
+        <h3 className="text-lg font-semibold inline ">{text}</h3>
+        <span className="translate-y-[30%] ml-2 inline-block group-hover:translate-x-1 transition duration-300">
+          <FaArrowRight />
+        </span>
+      </div>
     </Link>
   );
 };

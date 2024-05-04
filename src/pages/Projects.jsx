@@ -59,7 +59,7 @@ const Projects = () => {
   // console.log(projects);
  
   return (
-    <section className="section-margin">
+    <section className="section-margin mb-2">
       <SectionTitle text='projects' />
       <FilterBtn projects={projects} filterProjects={filterProjects}  />
     <div className="grid gap-y-[3rem] sm:grid-cols-2 md:grid-cols-3 sm:gap-x-10  ">
@@ -69,7 +69,7 @@ const Projects = () => {
         {/* <Project projects={projects} /> */}
       </div>
       
-      <LinkPage text='Contact us'/>
+      <LinkPage text='Contact us' link='/contact'/>
       </section>
   );
 }
