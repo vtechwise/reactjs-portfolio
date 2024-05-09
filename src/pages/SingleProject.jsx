@@ -3,6 +3,8 @@ import { SectionTitle } from "../component";
 import { singleProjects } from "../utils/data";
 import { Navigate, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+
 export const loader = ({ params }) => {
   const title = params.id;
   const singleProject = singleProjects.find((project) => {
@@ -21,7 +23,7 @@ const SingleProject = () => {
   function setLoadingFalse() {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }
 
   useEffect(() => {
@@ -51,19 +53,21 @@ const SingleProject = () => {
       </div>
       <SectionTitle text={title} />
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
-        <div className="grid gap-y-4 md:gap-y-0 items-start">
-          <div>
-            <span className="text-md capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
+        <div className="grid gap-y-4  items-start lg:grid-rows-[min-content,min-content]">
+          <div className="stack-container">
+            <span className="text-md stack-title capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
               stack :
             </span>
-            {stack.map((skill, index) => {
-              return (
-                <span className="text-lg">
-                  {skill}
-                  {index < stack.length - 1 ? "," : " "}{" "}
-                </span>
-              );
-            })}
+            <div className="stack-text">
+              {stack.map((skill, index) => {
+                return (
+                  <span className="text-lg ">
+                    {skill}
+                    {index < stack.length - 1 ? "," : " "}{" "}
+                  </span>
+                );
+              })}
+            </div>
           </div>
           <div>
             <span className="text-md capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
@@ -77,11 +81,13 @@ const SingleProject = () => {
             Project overview
           </h2>
           <p className="leading-8">{description}</p>
-          <a href={url} target="blank">
-            <button className="btn btn-primary rounded-sm mt-4 ">
-              visit website
-            </button>
-          </a>
+          <div className="flex">
+            <a href={url} target="blank" className="">
+              <button className="btn btn-primary block rounded-sm mt-4 ">
+                visit website
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

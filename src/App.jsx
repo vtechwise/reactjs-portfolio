@@ -7,6 +7,7 @@ import {loader as projectsLoader} from './pages/Projects'
 import {loader as singleProjectLoader} from './pages/SingleProject'
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <HomeLayout />,
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Landing />,
       },
-      {
+      { 
         path: "contact",
         element: <Contact />,
       },

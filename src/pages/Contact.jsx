@@ -49,9 +49,9 @@ const Contact = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-2 md:gap-x-20 ">
-        <form action="" className="">
+        <form action="" className="font-sans">
           <div className="form-control">
-            <label htmlFor="" className="label capitalize">
+            <label htmlFor="" className="label capitalize font-inherit ">
               <span className="label-text"> name</span>
             </label>
             <input
@@ -165,7 +165,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <LinkPage text={'Back home'} link={'/'}/>
+      <LinkPage text={"Back home"} link={"/"} />
     </section>
   );
 };

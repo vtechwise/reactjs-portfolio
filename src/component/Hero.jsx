@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-y-10 gap-x-10 sm:flex-row md:justify-between items-strech pt-14 md:mb-24"
+        className="flex flex-col gap-y-10 gap-x-10 sm:flex-row md:justify-between  pt-14 md:mb-24"
         id="home"
       >
-        <div className="rounded-lg relative">
+        <div className=" hidden md:block rounded-lg relative">
           <img
             src={portfolioImg}
-            className="w-screen md:w-[35rem] h-[25rem] md:h-[40rem] object-cover rounded-lg fill-black"
+            className=" w-screen md:w-[35rem] h-[25rem] md:h-[40rem] object-cover rounded-lg fill-black"
             alt=""
           />
 
@@ -33,14 +33,14 @@ const Hero = () => {
             Available for new projects
           </p>
         </div>
-        <div className="sm:order-first flex flex-col justify-between gap-y-28">
+        <div className="sm:order-first flex flex-col mt-12 justify-between gap-y-24">
           <div className="">
             <h1 className="text-3xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
               I craft beautiful and unique products.
             </h1>
-            <p className="mt-4 leading-7 ">
-              in my code every details serves a purpose- <br /> orchestrating a
-              digital masterpiece where user experience flow seamlessly{" "}
+            <p className="mt-4 leading-6 max-w-[25rem] ">
+              in my code every details serves a purpose- orchestrating a
+              digital masterpiece where user experience flow seamlessly.{" "}
             </p>
             <Link to={"/contact"}>
               <button className="btn mt-6 btn-primary  rounded-full text-md  md:btn-lg ">
@@ -48,7 +48,7 @@ const Hero = () => {
               </button>
             </Link>
           </div>
-          <div className="mb-12 flex gap-x-6">
+          <div className="mb-8 flex gap-x-6">
             <Link to={'/projects'} className=" h-[7.5rem] max-w--[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
               <h4 className="text-3xl">20+</h4>
               <p className="capitalize  flex gap-x-4 items-start text-[0.8rem]">
@@ -109,3 +109,7 @@ const Hero = () => {
   );
 };
 export default Hero;
+
+
+
+

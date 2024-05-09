@@ -20,3 +20,21 @@ p {
         @apply my-20
     }
 }
+
+.stack-container {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    'a b b'
+    'a b b  ';
+}
+.stack-title {
+  grid-area: a;
+  align-self: start;
+
+}
+.stack-text {
+    grid-area: b;
+    justify-self: start;
+}

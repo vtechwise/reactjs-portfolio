@@ -90,7 +90,12 @@ export const singleProjects = [
     description:
       "The ReactJS E-commerce Store, developed as a personal project for skill mastery, is a comprehensive web platform showcasing a robust implementation of e-commerce functionalities. Built with ReactJS and utilizing Redux Toolkit for state management, the website seamlessly covers all essential features, from adding and editing items in the cart to deleting items and more. The integration of Axios ensures efficient data fetching, enhancing the user experience by providing real-time product information. The latest version of React Router facilitates smooth navigation throughout the site, while the aesthetically pleasing user interface adds a polished touch to the overall user experience. This project serves as a testament to my commitment to mastering ReactJS, combining practical implementation with a feature-rich e-commerce showcase for hands-on learning and skill refinement",
     url: "https://vcomfystore.netlify.app/",
-    stack: ["react.js", "HTML", "tailwind css", "redux"],
+    stack: [
+      "react.js",
+      "HTML",
+      "tailwind css",
+      "redux",
+    ],
     service: "website development",
   },
   {
@@ -152,7 +157,7 @@ export const singleProjects = [
     title: "starx",
     description:
       "The StarX NFT Landing Page epitomizes excellence in web development, meticulously engineered with React.js and TailwindCSS. Serving as a beacon of proficiency, this platform showcases the seamless fusion of Tailwind's utility-first approach with React.js components, demonstrating mastery in crafting captivating user interfaces. Engineered for responsiveness and peak performance",
-    url:'https://vnft-landingpage.netlify.app/',
+    url: "https://vnft-landingpage.netlify.app/",
     stack: ["react.js", "tailwind css"],
     service: "website development",
   },
