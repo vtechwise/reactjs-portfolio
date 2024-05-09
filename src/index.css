@@ -24,8 +24,8 @@ p {
 .stack-container {
     display: grid;
     justify-items: start;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 50px max-content;
+    grid-template-columns: max-content 1fr !important;
+    /* grid-template-rows: 20px max-content; */
     grid-template-areas:
     'a b b'
     'a b b ';
