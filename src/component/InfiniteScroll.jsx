@@ -1,4 +1,4 @@
-const InfinteScroll = () => {
+const InfiniteScroll = () => {
   return (
     <div className="relative flex overflow-hidden ">
       <div className="py- animate-marque whitespace-nowrap text-base-300 font-bold text-7xl">
@@ -14,4 +14,4 @@ const InfinteScroll = () => {
     </div>
   );
 }
-export default InfinteScroll
+export default InfiniteScroll

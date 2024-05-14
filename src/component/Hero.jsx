@@ -35,7 +35,7 @@ const Hero = () => {
           </p>
         </div>
         <div className=" md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
-          <div className="text-center">
+          <div className="text-center md:text-left">
             <ScrollAnimation animateIn="fadeInDown" duration="1">
               <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
                 building user interfaces with frontend magic
@@ -44,7 +44,7 @@ const Hero = () => {
             <ScrollAnimation animateIn="fadeInUp" duration={"2"}>
               <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
                 in my code every details serves a purpose- orchestrating a
-                digital masterpiece where user experience flow seamlessly.{" "}
+                digital masterpiece where user experience flow seamlessly.
               </h4>
             </ScrollAnimation>
             <ScrollAnimation animateIn="bounceIn" duration={"6"} delay={""}>

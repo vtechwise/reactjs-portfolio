@@ -2,8 +2,9 @@ import { services } from "../utils/data";
 import SectionTitle from "./SectionTitle";
 import { FaReact } from "react-icons/fa";
 import servicesImg from "../assets/services.jpg";
-import InfinteScroll from "./InfinteScroll";
+import InfiniteScroll from "./InfiniteScroll";
 import ScrollAnimation from "react-animate-on-scroll";
+// import BookingCalendar from "./Booking";
 
 function animationCss(index) {
   if (index === 0) {
@@ -28,7 +29,7 @@ const Services = () => {
   return (
     <section className="section-margin">
       <SectionTitle text="services" />
-      <div className="grid gap-y-10 sm:grid-cols-2 md:grid-cols-3 gap-x-10 pb-6">
+      <div className="grid gap-y-10 sm:grid-cols-2 md:grid-cols-3 gap-x-10 pb-6 overflow-x-hidden">
         {services.map((service, index) => {
           const { id, title, description, icon } = service;
           return (
@@ -49,14 +50,14 @@ const Services = () => {
           );
         })}
       </div>
-      <InfinteScroll />
+      <InfiniteScroll />
       <div className="mt-16 grid sm:grid-cols-2  gap-x-20 md:mt-24">
         <img src={servicesImg} alt="" className=" mb-4" />
         <div className="flex flex-col justify-between gap-y-20">
           <p className="text-">
             empowered by a versatile tools box and honed skills,i utilized
             cutting-edge technology to bring digital visions into life. Each
-            toolis carefully selected to elevate projects, ensuring they stand
+            tool is carefully selected to elevate projects, ensuring they stand
             out in the ever-evolving landscape of technology and design.{" "}
           </p>
           <div>
@@ -100,6 +101,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      {/* <BookingCalendar/> */}
     </section>
   );
 };
