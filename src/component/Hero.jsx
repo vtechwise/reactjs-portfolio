@@ -38,7 +38,7 @@ const Hero = () => {
             <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
               building user interfaces with frontend magic
             </h1>
-            <h4 className="mt-4 leading-6 max-w-[25rem] ">
+            <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
               in my code every details serves a purpose- orchestrating a digital
               masterpiece where user experience flow seamlessly.{" "}
             </h4>
