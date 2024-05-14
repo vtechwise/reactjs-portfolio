@@ -6,9 +6,9 @@ const Project = ({ image, title, category }) => {
   // console.log(title);
   return (
     <>
-      <div>
+      <div className="">
         <Link to={`/project/${title}`}>
-          <div className="bg-base-300 rounded-xl group overflow-hidden">
+          <div className="bg-base-300 rounded-xl shadow-lg group overflow-hidden">
             <img
               src={image}
               alt=""
