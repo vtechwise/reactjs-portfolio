@@ -24,7 +24,7 @@ const About = () => {
         <div>
           <h2 className="text-2xl font-bold capitalize">victor olabisi</h2>
           <p className="mt-4">
-            Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
+            Hello, I'm a dedicated React.js Frontend Developer
             passionate about crafting seamless user experiences. With a strong
             foundation in JavaScript and expertise in React.js, I specialize in
             building responsive and intuitive web applications. I bring a
