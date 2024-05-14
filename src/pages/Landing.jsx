@@ -68,7 +68,7 @@ const Landing = () => {
                 >
                   <Link
                     to={"/contact"}
-                    className="btn-primary btn btn-md  mt-6 text-center  rounded-full text-lg "
+                    className="btn-primary btn btn-md  mt-6 text-center  rounded-xl text-lg "
                   >
                     contact us
                   </Link>

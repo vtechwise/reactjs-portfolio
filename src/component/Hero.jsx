@@ -35,21 +35,24 @@ const Hero = () => {
         </div>
         <div className=" text-center md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
           <div className="">
-            <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl">
-              I craft beautiful and unique products.
+            <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
+              building user interfaces with frontend magic
             </h1>
-            <p className="mt-4 leading-6 max-w-[25rem] ">
-              in my code every details serves a purpose- orchestrating a
-              digital masterpiece where user experience flow seamlessly.{" "}
-            </p>
+            <h4 className="mt-4 leading-6 max-w-[25rem] ">
+              in my code every details serves a purpose- orchestrating a digital
+              masterpiece where user experience flow seamlessly.{" "}
+            </h4>
             <Link to={"/contact"}>
-              <button className="btn mt-6 btn-primary  rounded-full text-md  md:btn-lg ">
+              <button className="btn mt-6 btn-primary  rounded-xl text-md  md:btn-lg  ">
                 Work with me
               </button>
             </Link>
           </div>
           <div className="mb-8 flex gap-x-6 justify-center md:justify-start ">
-            <Link to={'/projects'} className=" h-[7.5rem] max-w--[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
+            <Link
+              to={"/projects"}
+              className=" h-[7.5rem] max-w--[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group"
+            >
               <h4 className="text-3xl">20+</h4>
               <p className="capitalize  flex gap-x-4 items-start text-[0.8rem]">
                 completed project{" "}
@@ -58,7 +61,10 @@ const Hero = () => {
                 </span>
               </p>
             </Link>
-            <Link to={'/about'} className=" h-[7.5rem] max-w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group">
+            <Link
+              to={"/about"}
+              className=" h-[7.5rem] max-w-[15rem] md:h-[12rem] md:w-[17rem] bg-blue-300 flex flex-col justify-end px-[1.3rem] md:px-[1.7rem] pb-[1rem] text-black rounded-lg group"
+            >
               <h4 className="text-3xl">3</h4>
               <p className="capitalize  flex  gap-x-4 items-start text-[0.8rem] ">
                 years of experience{" "}
@@ -96,7 +102,7 @@ const Hero = () => {
             to life!{" "}
           </p>
           <a href={resumeUrl}>
-            <button className="btn btn-primary rounded-full">
+            <button className="btn btn-primary rounded-xl">
               <span>
                 <MdOutlineFileDownload />
               </span>

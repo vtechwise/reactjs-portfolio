@@ -21,7 +21,7 @@ const FeaturedProject = () => {
         {" "}
         <Link
           to={"/projects"}
-          className="btn btn-primary rounded-full capitalize mt-8"
+          className="btn btn-primary rounded-xl capitalize mt-8"
         >
           {" "}
           View all works

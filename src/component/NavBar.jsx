@@ -67,8 +67,8 @@ const NavBar = () => {
         <div className="navbar-end">
           <label className="swap swap-rotate">
             <input type="checkbox" onChange={toggleTheme} />
-            <BsSunFill className="swap-on h-4 w-4" />
-            <BsMoonFill className="swap-off h-4 w-4" />
+            <BsMoonFill className="swap-on h-4 w-4" />
+            <BsSunFill className="swap-off h-4 w-4" />
           </label>
           <label htmlFor="my-drawer" className="drawer-button lg:hidden ml-8">
             <FaBarsStaggered className="h-6 w-6 " />
