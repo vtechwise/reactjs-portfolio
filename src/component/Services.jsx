@@ -3,28 +3,53 @@ import SectionTitle from "./SectionTitle";
 import { FaReact } from "react-icons/fa";
 import servicesImg from "../assets/services.jpg";
 import InfinteScroll from "./InfinteScroll";
+import ScrollAnimation from "react-animate-on-scroll";
+
+function animationCss(index) {
+  if (index === 0) {
+    return "slideInLeft";
+  } else if (index === 1) {
+    return "slideInRight";
+  } else {
+    return "slideInLeft";
+  }
+}
+function duration(index) {
+   if (index === 0) {
+     return "1";
+   } else if (index === 1) {
+     return "2";
+   } else {
+     return "3";
+   }
+}
+
 const Services = () => {
   return (
     <section className="section-margin">
       <SectionTitle text="services" />
       <div className="grid gap-y-10 sm:grid-cols-2 md:grid-cols-3 gap-x-10 pb-6">
-        {services.map((service) => {
+        {services.map((service, index) => {
           const { id, title, description, icon } = service;
           return (
-            <article
-              key={id}
-              className="bg-base-300 border-b-[.25rem] border-primary p-6  "
-            >
-              <span className="text-5xl inline-block pb-2">{icon}</span>
-              <h2 className="text-2xl pb-4 capitalize font-semibold">
-                {title}
-              </h2>
-              <p>{description}</p>
-            </article>
+            <div>
+              <ScrollAnimation duration={duration(index)} animateIn={animationCss(index)}>
+                <article
+                  key={id}
+                  className="bg-base-300 border-b-[.25rem] border-primary p-6  "
+                >
+                  <span className="text-5xl inline-block pb-2">{icon}</span>
+                  <h2 className="text-2xl pb-4 capitalize font-semibold">
+                    {title}
+                  </h2>
+                  <p>{description}</p>
+                </article>
+              </ScrollAnimation>
+            </div>
           );
         })}
       </div>
-      <InfinteScroll/>
+      <InfinteScroll />
       <div className="mt-16 grid sm:grid-cols-2  gap-x-20 md:mt-24">
         <img src={servicesImg} alt="" className=" mb-4" />
         <div className="flex flex-col justify-between gap-y-20">

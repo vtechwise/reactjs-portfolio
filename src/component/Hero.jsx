@@ -1,13 +1,13 @@
 import portfolioImg from "../assets/avatarImg.jpg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
-import aboutMe from '../assets/aboute me.svg'
+import aboutMe from "../assets/aboute me.svg";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Hero = () => {
-    const resumeUrl= 'victor-olabisi cv.pdf'
+  const resumeUrl = "victor-olabisi cv.pdf";
   return (
     <>
       <div
@@ -34,25 +34,26 @@ const Hero = () => {
             Available for new projects
           </p>
         </div>
-        <div className=" text-center md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
-          <div className="">
+        <div className=" md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
+          <div className="text-center">
             <ScrollAnimation animateIn="fadeInDown" duration="1">
               <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
                 building user interfaces with frontend magic
               </h1>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInUp" duration={'2'} >
+            <ScrollAnimation animateIn="fadeInUp" duration={"2"}>
               <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
                 in my code every details serves a purpose- orchestrating a
                 digital masterpiece where user experience flow seamlessly.{" "}
               </h4>
             </ScrollAnimation>
-
-            <Link to={"/contact"}>
-              <button className="btn mt-6 btn-primary  rounded-xl text-md  md:btn-lg  ">
-                Work with me
-              </button>
-            </Link>
+            <ScrollAnimation animateIn="bounceIn" duration={"6"} delay={""}>
+              <Link to={"/contact"}>
+                <button className="btn mt-6 btn-primary  rounded-xl text-md  md:btn-lg  ">
+                  Work with me
+                </button>
+              </Link>
+            </ScrollAnimation>
           </div>
           <div className="mb-8 flex gap-x-6 justify-center md:justify-start ">
             <Link
@@ -121,7 +122,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-
-
-
