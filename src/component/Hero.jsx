@@ -4,6 +4,7 @@ import { CgMail } from "react-icons/cg";
 import aboutMe from '../assets/aboute me.svg'
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Hero = () => {
     const resumeUrl= 'victor-olabisi cv.pdf'
@@ -35,13 +36,18 @@ const Hero = () => {
         </div>
         <div className=" text-center md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
           <div className="">
-            <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
-              building user interfaces with frontend magic
-            </h1>
-            <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
-              in my code every details serves a purpose- orchestrating a digital
-              masterpiece where user experience flow seamlessly.{" "}
-            </h4>
+            <ScrollAnimation animateIn="fadeInDown" duration="1">
+              <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
+                building user interfaces with frontend magic
+              </h1>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInUp" duration={'2'} >
+              <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
+                in my code every details serves a purpose- orchestrating a
+                digital masterpiece where user experience flow seamlessly.{" "}
+              </h4>
+            </ScrollAnimation>
+
             <Link to={"/contact"}>
               <button className="btn mt-6 btn-primary  rounded-xl text-md  md:btn-lg  ">
                 Work with me
