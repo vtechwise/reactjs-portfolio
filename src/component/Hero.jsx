@@ -33,9 +33,9 @@ const Hero = () => {
             Available for new projects
           </p>
         </div>
-        <div className="sm:order-first flex flex-col mt-12 justify-between gap-y-24">
+        <div className=" text-center md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
           <div className="">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl tracking-wide font-semibold max-w-xl">
+            <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl">
               I craft beautiful and unique products.
             </h1>
             <p className="mt-4 leading-6 max-w-[25rem] ">
@@ -48,7 +48,7 @@ const Hero = () => {
               </button>
             </Link>
           </div>
-          <div className="mb-8 flex gap-x-6">
+          <div className="mb-8 flex gap-x-6 justify-center md:justify-start ">
             <Link to={'/projects'} className=" h-[7.5rem] max-w--[15rem] md:h-[12rem] md:w-[17rem] bg-secondary rounded-lg flex flex-col justify-end  px-[1.3rem] mdpx-[1.7rem] pb-[1rem] text-black group">
               <h4 className="text-3xl">20+</h4>
               <p className="capitalize  flex gap-x-4 items-start text-[0.8rem]">
