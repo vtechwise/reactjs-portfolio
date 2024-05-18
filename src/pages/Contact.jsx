@@ -7,6 +7,7 @@ import { FAQ } from "../utils/data";
 import { useState } from "react";
 import { MdOutlineArrowDropUp } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import { useSpring,animated } from "@react-spring/web";
 
 const Contact = () => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -108,12 +109,26 @@ const Contact = () => {
           </div>
         </form>
         <div className="faq mt-6">
-          <SectionTitle text="frequently asked question" />
+          <SectionTitle text="FAQ" />
           <div>
             {FAQ.map((singleFaq, index) => {
               const { id, question, answer } = singleFaq;
+              const isActive = currentItem === index
+
+              const maxContainerHeight =
+                isActive !== null ? "1000px" : "0px";
+            const containerSpring = useSpring({
+              maxHeight: maxContainerHeight,
+              opacity: isActive !== null ? 1 : 0,
+              config: { tension: 250, friction: 20,duration:600 },
+            });
+             const answerSpring = useSpring({
+               height: isActive ? "auto" : 0,
+               opacity: isActive ? 1 : 0,
+               config: { duration: 200 }, // Adjust duration for slower animation
+             });
               return (
-                <article className="shadow-l mb-2 p-4 border-2 border-base-200">
+                <animated.article style={containerSpring} className="faq shadow-lg mb-3 p-4 border-2 border-base-200">
                   <div
                     className="flex gap-x-[2rem] justify-between cursor-pointer "
                     onClick={() => {
@@ -130,11 +145,11 @@ const Contact = () => {
                     </div>
                   </div> 
                   {currentItem === index && (
-                    <div className={` answer mt-4 animate-[slide-top] transition slide-top duration-300`}>
+                    <animated.div style={answerSpring} className={` mt-4 animate-[slide-top] transition slide-top duration-300`}>
                       <p>{answer}</p>
-                    </div>
+                    </animated.div>
                   )}
-                </article>
+                </animated.article>
               );
             })}
           </div>
