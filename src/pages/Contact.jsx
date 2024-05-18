@@ -3,10 +3,20 @@ import contactImg from "../assets/contact-us.svg";
 import { LuLinkedin } from "react-icons/lu";
 import { FaRegEnvelope } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
-
-
+import { FAQ } from "../utils/data";
+import { useState } from "react";
+import { MdOutlineArrowDropUp } from "react-icons/md";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const Contact = () => {
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [currentItem, setCurrentItem] = useState(null);
+
+  function handleClick(index) {
+    setCurrentItem(currentItem === index ? null : index);
+    setShowAnswer(!showAnswer)
+  }
+
   return (
     <section className="mt-16">
       <SectionTitle text="lets talk" />
@@ -99,69 +109,34 @@ const Contact = () => {
         </form>
         <div className="faq mt-6">
           <SectionTitle text="frequently asked question" />
-          <div className="collapse collapse-arrow bg-base-200 ">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-lg font-medium">
-              What technologies are you proficient in for frontend development?{" "}
-            </div>
-            <div className="collapse-content">
-              <p>
-                I am proficient in HTML, CSS, and JavaScript, which form the
-                foundation of my frontend development skills. Additionally, I
-                have hands-on experience with popular frontend libraries and
-                frameworks such as React.js, enabling me to build interactive
-                and dynamic user interfaces efficiently.
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 ">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-lg font-medium">
-              Can you describe your approach to responsive web design?
-            </div>
-            <div className="collapse-content">
-              <p>
-                My approach to responsive web design involves using a
-                mobile-first strategy. I prioritize the mobile user experience
-                and then progressively enhance for larger screens. I leverage
-                flexible grids and media queries to ensure that websites adapt
-                seamlessly to various devices, providing an optimal viewing and
-                interaction experience.
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 ">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-lg font-medium">
-              How do you optimize web performance for faster loading times?{" "}
-            </div>
-            <div className="collapse-content">
-              <p>
-                I optimize web performance by employing several techniques. This
-                includes code splitting to reduce initial load times, lazy
-                loading images and components to defer non-essential content,
-                and minimizing HTTP requests through bundling. I also prioritize
-                efficient caching strategies and utilize tools like Lighthouse
-                to identify and address performance bottlenecks.
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 ">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div className="collapse-title text-lg font-medium">
-              What is your experience with version control systems, and which
-              one do you prefer?
-            </div>
-            <div className="collapse-content">
-              <p>
-                I am well-versed in using Git as my primary version control
-                system. I have extensive experience with platforms like GitHub,
-                which facilitates collaborative development and code review
-                processes. Git enables me to manage code changes effectively,
-                track project history, and collaborate seamlessly with team
-                members.
-              </p>
-            </div>
+          <div>
+            {FAQ.map((singleFaq, index) => {
+              const { id, question, answer } = singleFaq;
+              return (
+                <article className="shadow-l mb-2 p-4 border-2 border-base-200">
+                  <div
+                    className="flex gap-x-[2rem] justify-between cursor-pointer "
+                    onClick={() => {
+                      handleClick(index);
+                    }}
+                  >
+                    <p className="font-bold ">{question}</p>
+                    <div className="h-[2rem] w-[2rem] bg-primary opacity-[70%] flex-shrink-0 rounded-full grid relative  place-items-center text-[1.5rem]">
+                      {currentItem === index ? (
+                        <MdOutlineArrowDropUp className="fill-black absolute" />
+                      ) : (
+                        <MdOutlineArrowDropDown className="fill-black absolute" />
+                      )}
+                    </div>
+                  </div> 
+                  {currentItem === index && (
+                    <div className={` answer mt-4 animate-[slide-top] transition slide-top duration-300`}>
+                      <p>{answer}</p>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>

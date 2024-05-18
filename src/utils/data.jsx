@@ -7,31 +7,28 @@ import { SiTailwindcss } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { FaWix } from "react-icons/fa";
 
-
-
-
 // const space = ty6v85dqhyv5;
 //  const token = hCzQeZhzB2usfuMwbr4KVismWDbt6 - aPRaoeorEcnx0;
 export const menus = [
   {
     id: 1,
     text: "home",
-    url:'/'
+    url: "/",
   },
   {
     id: 2,
     text: "about",
-    url:'/about'
+    url: "/about",
   },
   {
     id: 3,
     text: "projects",
-    url:'/projects'
+    url: "/projects",
   },
   {
     id: 4,
     text: "contact",
-    url:'/contact'
+    url: "/contact",
   },
 ];
 
@@ -90,12 +87,7 @@ export const singleProjects = [
     description:
       "The ReactJS E-commerce Store, developed as a personal project for skill mastery, is a comprehensive web platform showcasing a robust implementation of e-commerce functionalities. Built with ReactJS and utilizing Redux Toolkit for state management, the website seamlessly covers all essential features, from adding and editing items in the cart to deleting items and more. The integration of Axios ensures efficient data fetching, enhancing the user experience by providing real-time product information. The latest version of React Router facilitates smooth navigation throughout the site, while the aesthetically pleasing user interface adds a polished touch to the overall user experience. This project serves as a testament to my commitment to mastering ReactJS, combining practical implementation with a feature-rich e-commerce showcase for hands-on learning and skill refinement",
     url: "https://vcomfystore.netlify.app/",
-    stack: [
-      "react.js",
-      "HTML",
-      "tailwind css",
-      "redux",
-    ],
+    stack: ["react.js", "HTML", "tailwind css", "redux"],
     service: "website development",
   },
   {
@@ -186,7 +178,6 @@ export const skills = [
   },
 ];
 
-
 export const skill2 = [
   {
     skill: "webflow",
@@ -204,9 +195,34 @@ export const skill2 = [
     skill: "shopify",
     icon: <FaReact />,
   },
- 
 ];
 
-
-
-
+export const FAQ = [
+  {
+    id: 1,
+    question:
+      "What technologies are you proficient in for frontend development?",
+    answer:
+      " I am proficient in HTML, CSS, and JavaScript, which form the foundation of my frontend development skills. Additionally,I have hands-on experience with popular frontend libraries and frameworks such as React.js, enabling me to build interactive and dynamic user interfaces efficiently.",
+  },
+  {
+    id: 2,
+    question: " Can you describe your approach to responsive web design?",
+    answer:
+      " My approach to responsive web design involves using a mobile-first strategy. I prioritize the mobile user experience and then progressively enhance for larger  screens. I leverage flexiblegrids and media queries to ensure that websites adapt seamlessly to various devices providing an optimal viewing and interaction experience.",
+  },
+  {
+    id: 3,
+    question:
+      "How do you optimize web performance for faster loading times?",
+    answer:
+      " I optimize web performance by employing several techniques.This includes code splitting to reduce initial load times,. lazy loading images and components to defer non-essential. content, and minimizing HTTP requests through bundling. I. also prioritize efficient caching strategies and utilize. tools like Lighthouse to identify and address performance.bottlenecks.",
+  },
+  {
+    id: 4,
+    question:
+      " What is your experience with version control systems, and which one do you prefer?",
+    answer:
+      "  I am well-versed in using Git as my primary version control system. I have extensive experience with platforms like GitHub, which facilitates collaborative development and code review processes. Git enables me to manage code changes effectively, track project history, and collaborate seamlessly with team members.",
+  },
+];
