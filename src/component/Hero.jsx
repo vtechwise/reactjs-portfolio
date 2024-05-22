@@ -92,8 +92,8 @@ const Hero = () => {
 
         <div>
           <h2 className="text-2xl text-semibold">
-            My goal as a Frontend web developer is to create memorable,
-            user-centered experiences.
+            My goal as a Frontend Developer is to design memorable user
+            experiences.
           </h2>
           <p className="my-4 leading-7 font-san-serif ">
             Hello, I'm victor olabisi, a dedicated React.js Frontend Developer
