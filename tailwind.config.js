@@ -27,6 +27,6 @@ export default {
   plugins: [],
   plugins: [require("daisyui", "tw-elements-react/dist/plugin.cjs")],
   daisyui: {
-    themes: ["light", "dark",'' ,"cupcake"],
+    themes: ["light", "dark",'' ,"cupcake",'emerald'],
   },
 };

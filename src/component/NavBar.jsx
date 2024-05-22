@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import portfolioImg from '../assets/avatarImg.jpg'
 const themes = {
-    cupcake: 'cupcake',
+    cupcake: 'light',
     dark:'dark'
 }
 const getThemeFromLocalStorage = () => {

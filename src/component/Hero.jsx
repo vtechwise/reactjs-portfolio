@@ -49,7 +49,7 @@ const Hero = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="bounceIn" duration={"6"} delay={""}>
               <Link to={"/contact"}>
-                <button className="btn mt-6 btn-primary  rounded-xl text-md  md:btn-lg  ">
+                <button className="btn mt-6 btn-primary   rounded-xl text-md  md:btn-lg  ">
                   Work with me
                 </button>
               </Link>
