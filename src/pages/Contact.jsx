@@ -30,9 +30,7 @@ const Contact = () => {
             <LuLinkedin />
           </span>
           <div>
-            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
-              connect
-            </h5>
+            <h5 className=" font-bold mb-[.17rem] capitalize">connect</h5>
             <a href="">Linkedin</a>
           </div>
         </div>
@@ -41,9 +39,7 @@ const Contact = () => {
             <FaRegEnvelope />
           </span>
           <div>
-            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
-              email
-            </h5>
+            <h5 className="text- font-bold  mb-[.17rem] capitalize">email</h5>
             <a href="">oguntayovictor65@gmail.com</a>
           </div>
         </div>
@@ -52,10 +48,10 @@ const Contact = () => {
             <IoLocationOutline />
           </span>
           <div>
-            <h5 className="text-xl font-semibold  mb-[.3rem] capitalize">
+            <h5 className=" font-bold  mb-[.17rem] capitalize">
               location
             </h5>
-            <a href="">Nigeria Akure</a>
+            <a href="#">Nigeria Akure</a>
           </div>
         </div>
       </div>
@@ -113,22 +109,25 @@ const Contact = () => {
           <div>
             {FAQ.map((singleFaq, index) => {
               const { id, question, answer } = singleFaq;
-              const isActive = currentItem === index
+              const isActive = currentItem === index;
 
-              const maxContainerHeight =
-                isActive !== null ? "1000px" : "0px";
-            const containerSpring = useSpring({
-              maxHeight: maxContainerHeight,
-              opacity: isActive !== null ? 1 : 0,
-              config: { tension: 250, friction: 20,duration:600 },
-            });
-             const answerSpring = useSpring({
-               height: isActive ? "auto" : 0,
-               opacity: isActive ? 1 : 0,
-               config: { duration: 200 }, // Adjust duration for slower animation
-             });
+              const maxContainerHeight = isActive !== null ? "1000px" : "0px";
+              const containerSpring = useSpring({
+                maxHeight: maxContainerHeight,
+                opacity: isActive !== null ? 1 : 0,
+                config: { tension: 250, friction: 20, duration: 600 },
+              });
+              const answerSpring = useSpring({
+                height: isActive ? "auto" : 0,
+                opacity: isActive ? 1 : 0,
+                config: { duration: 200 }, // Adjust duration for slower animation
+              });
               return (
-                <animated.article style={containerSpring} className="faq shadow-lg mb-3 p-4 border-2 border-base-200">
+                <animated.article
+                  key={id}
+                  style={containerSpring}
+                  className="faq shadow-lg mb-3 p-4 border-2 border-base-200"
+                >
                   <div
                     className="flex gap-x-[2rem] justify-between cursor-pointer "
                     onClick={() => {
@@ -136,16 +135,19 @@ const Contact = () => {
                     }}
                   >
                     <p className="font-bold ">{question}</p>
-                    <div className="h-[2rem] w-[2rem] bg-primary opacity-[70%] flex-shrink-0 rounded-full grid relative  place-items-center text-[1.5rem]">
+                    <div className="h-[2rem] w-[2rem] bg-primary opacity-[70%] flex-shrink-0 rounded-full grid relative  place-items-center text-[2rem]">
                       {currentItem === index ? (
-                        <MdOutlineArrowDropUp className="fill-black absolute" />
+                        <MdOutlineArrowDropUp className="fill-white absolute" />
                       ) : (
-                        <MdOutlineArrowDropDown className="fill-black absolute" />
+                        <MdOutlineArrowDropDown className="fill-white absolute" />
                       )}
                     </div>
-                  </div> 
+                  </div>
                   {currentItem === index && (
-                    <animated.div style={answerSpring} className={` mt-4 animate-[slide-top] transition slide-top duration-300`}>
+                    <animated.div
+                      style={answerSpring}
+                      className={` mt-4 animate-[slide-top] transition slide-top duration-300`}
+                    >
                       <p>{answer}</p>
                     </animated.div>
                   )}
