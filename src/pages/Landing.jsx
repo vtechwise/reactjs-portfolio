@@ -203,9 +203,9 @@ const Landing = () => {
           </div>
         </section>
         {scroll && (
-          <div onClick={scrollToTop} className="fixed bottom-[3rem] right-[1rem] font-bold grid place-items-center rounded-md cursor-pointer h-[1.5rem] w-[1.5rem] bg-primary">
+          <div onClick={scrollToTop} className="fixed bottom-[3rem] right-[1rem] font-bold grid place-items-center rounded-md cursor-pointer h-[1.8rem] w-[1.9rem] bg-primary ">
             <span>
-              <FaArrowUp />
+              <FaArrowUp className="fill-white" />
             </span>
           </div>
         )}
