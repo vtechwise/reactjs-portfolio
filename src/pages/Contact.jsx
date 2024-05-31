@@ -32,17 +32,13 @@ const Contact = () => {
     const data = Object.fromEntries(formData);
     console.log(data);
     try {
-      const res = await axios.post(
-        ".netlify/functions/send-email",
-        data,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const res = await axios.post(".netlify/functions/send-email", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      e.target.reset();
       toast.success(`${res.data.message}`);
-      e.currentTarget.reset();
     } catch (error) {
       throw new Error("there was an error");
     }
