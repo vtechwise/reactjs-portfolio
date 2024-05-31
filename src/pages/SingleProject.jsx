@@ -55,7 +55,7 @@ const SingleProject = () => {
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
         <div className="grid gap-y-4  items-start lg:grid-rows-[min-content,min-content]">
           <div className="stack-container">
-            <span className="text-md stack-title capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
+            <span className="text-md text-white stack-title capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem]">
               stack :
             </span>
             <div className="stack-text">
@@ -70,7 +70,7 @@ const SingleProject = () => {
             </div>
           </div>
           <div>
-            <span className="text-md capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
+            <span className="text-md text-white capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
               service :
             </span>
             <span className="text-lg capitalize"> {service}.</span>
@@ -83,7 +83,7 @@ const SingleProject = () => {
           <p className="leading-8">{description}</p>
           <div className="flex">
             <a href={url} target="blank" className="">
-              <button className="btn btn-primary block rounded-sm mt-4 ">
+              <button className="btn btn-primary block  mt-4 rounded-lg">
                 visit website
               </button>
             </a>

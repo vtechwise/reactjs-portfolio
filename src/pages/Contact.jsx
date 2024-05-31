@@ -43,6 +43,7 @@ const [isLoading, setIsLoading] = useState(false)
       toast.success(`${res.data.message}`);
     } catch (error) {
       throw new Error("there was an error");
+      toast.error(error)
     }
   }
 
