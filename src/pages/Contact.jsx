@@ -16,27 +16,29 @@ const Contact = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
 
-  const navigation = useNavigation();
-  const isSubmitting = navigation == "submitting";
+const [isLoading, setIsLoading] = useState(false)
+
+  // const navigation = useNavigation();
+  // const isSubmitting = navigation == "submitting";
 
   //COMMENT function for FAQ logic
   function handleClick(index) {
     setCurrentItem(currentItem === index ? null : index);
     setShowAnswer(!showAnswer);
   }
-
   // COMMENT handle form submission
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
-    console.log(data);
+    setIsLoading(true)
     try {
       const res = await axios.post(".netlify/functions/send-email", data, {
         headers: {
           "Content-Type": "application/json",
         },
       });
+      setIsLoading(false)
       e.target.reset();
       toast.success(`${res.data.message}`);
     } catch (error) {
@@ -118,11 +120,11 @@ const Contact = () => {
             <button
               className="btn btn-primary mt-4 rounded-xl"
               type="submit"
-              disabled={isSubmitting}
+              disabled={isLoading}
             >
-              {isSubmitting ? (
+              {isLoading ? (
                 <>
-                  <div className="loading loading-spinner"></div>
+                  <span className="loading loading-spinner  bg-primary"></span>
                 </>
               ) : (
                 "submit"
