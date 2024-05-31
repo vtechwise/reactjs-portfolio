@@ -20,9 +20,6 @@ const Landing = () => {
     
     const handleScroll=()=> {
       const scrollThreshold = 3000;
-      console.log(scrollThreshold);
-      console.log('scroll');
-      console.log(window.scrollY);
       if (window.scrollY >= scrollThreshold) {
         setScroll(true);
       } else {

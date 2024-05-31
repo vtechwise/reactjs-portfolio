@@ -7,15 +7,45 @@ import { FAQ } from "../utils/data";
 import { useState } from "react";
 import { MdOutlineArrowDropUp } from "react-icons/md";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import { useSpring,animated } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
+import { useNavigation } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
 
+  const navigation = useNavigation();
+  const isSubmitting = navigation == "submitting";
+
+  //COMMENT function for FAQ logic
   function handleClick(index) {
     setCurrentItem(currentItem === index ? null : index);
-    setShowAnswer(!showAnswer)
+    setShowAnswer(!showAnswer);
+  }
+
+  // COMMENT handle form submission
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    try {
+      const res = await axios.post(
+        ".netlify/functions/send-email",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      toast.success(`${res.data.message}`);
+      e.currentTarget.reset();
+    } catch (error) {
+      throw new Error("there was an error");
+    }
   }
 
   return (
@@ -48,37 +78,25 @@ const Contact = () => {
             <IoLocationOutline />
           </span>
           <div>
-            <h5 className=" font-bold  mb-[.17rem] capitalize">
-              location
-            </h5>
+            <h5 className=" font-bold  mb-[.17rem] capitalize">location</h5>
             <a href="#">Nigeria Akure</a>
           </div>
         </div>
       </div>
       <div className="grid md:grid-cols-2 md:gap-x-20 ">
-        <form action="" className="font-sans">
+        {/* FORM INPUT */}
+        <form action="" className="font-sans" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="" className="label capitalize font-inherit ">
               <span className="label-text"> name</span>
             </label>
             <input
               type="text"
+              name="name"
               className=" input input-bordered bg-base-300 border-none outline-none rounded-lg"
-              name="first name"
               required
             />
           </div>
-          {/* <div className="form-control">
-            <label htmlFor="" className="label capitalize">
-              <span className="label-text">last name</span>
-            </label>
-            <input
-              type="text"
-              className=" input input-bordered "
-              name="last name"
-              required
-            />
-          </div> */}
           <div className="form-control">
             <label htmlFor="email" className="label capitalize">
               <span className="label-text">email</span>
@@ -101,9 +119,23 @@ const Contact = () => {
               rows="10"
               className="textarea resize-none textarea-bordered bg-base-300 border-none outline-none rounded-lg"
             ></textarea>
-            <button className="btn btn-primary mt-4 rounded-xl">submit</button>
+            <button
+              className="btn btn-primary mt-4 rounded-xl"
+              type="submit"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                <>
+                  <div className="loading loading-spinner"></div>
+                </>
+              ) : (
+                "submit"
+              )}
+            </button>
           </div>
         </form>
+        {/* END OF FORM INPUT */}
+
         <div className="faq mt-6">
           <SectionTitle text="FAQ" />
           <div>
