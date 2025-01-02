@@ -153,6 +153,21 @@ export const singleProjects = [
     stack: ["react.js", "tailwind css"],
     service: "website development",
   },
+  {
+    title: "gotipmi",
+    description:
+      "Gotipmi is a professional-grade donation platform developed for a client by a team of four, including a UI/UX designer, a backend developer, and two frontend developers (my role). Inspired by BuyMeCoffee, it empowers creators to connect with fans and monetize their content effectively. The platform includes features like secure donations via Flutterwave for payments and withdrawals, social media integration to enhance visibility, and content sharing for creators to engage their audience. It also supports follower interactions, direct messaging, membership options with exclusive benefits, and goal-setting functionalities for transparency and motivation. Comprehensive user profiles allow customization, while interactive elements such as likes and comments foster engagement. Built using cutting-edge technologies including React.js, Tailwind CSS, DaisyUI, React Query, React Router (v6.4+), Redux Toolkit, and Axios, Gotipmi delivers a sleek, responsive design and advanced state management for a seamless user experience. The modular and scalable architecture ensures the platform’s adaptability to future enhancements, making it a robust solution for creators and their communities.",
+    url: "https://gotipmi.com/",
+    stack: [
+      "react.js",
+      "tailwind css",
+      "Daisyui",
+      "redux",
+      "react query",
+      "axios",
+    ],
+    service: "website development",
+  },
 ];
 
 export const skills = [

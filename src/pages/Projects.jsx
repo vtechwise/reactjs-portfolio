@@ -34,9 +34,6 @@ const getProjectsFromLocalStorage = () => {
   return (projects = JSON.parse(projects));
 };
 
-
-
-
 const Projects = () => {
   const projects = useLoaderData();
   const [allProjects, setAllProjects] = useState(

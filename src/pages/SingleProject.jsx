@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export const loader = ({ params }) => {
   const title = params.id;
+
   const singleProject = singleProjects.find((project) => {
     return project.title === title;
   });
