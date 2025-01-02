@@ -8,6 +8,7 @@ import { Link, ScrollRestoration } from "react-router-dom";
 const HomeLayout = () => {
   const navigate = useNavigation();
   const isLoading = navigate.state === "loading";
+  
 
   return (
     <div className="drawer drawer-end ">

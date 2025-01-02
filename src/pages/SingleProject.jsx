@@ -4,7 +4,6 @@ import { singleProjects } from "../utils/data";
 import { Navigate, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-
 export const loader = ({ params }) => {
   const title = params.id;
   const singleProject = singleProjects.find((project) => {
@@ -70,7 +69,7 @@ const SingleProject = () => {
             </div>
           </div>
           <div>
-            <span className="text-md text-white capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
+            <span className="text-md text-whit capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
               service :
             </span>
             <span className="text-lg capitalize"> {service}.</span>

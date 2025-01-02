@@ -213,8 +213,7 @@ export const FAQ = [
   },
   {
     id: 3,
-    question:
-      "How do you optimize web performance for faster loading times?",
+    question: "How do you optimize web performance for faster loading times?",
     answer:
       " I optimize web performance by employing several techniques.This includes code splitting to reduce initial load times,. lazy loading images and components to defer non-essential. content, and minimizing HTTP requests through bundling. I. also prioritize efficient caching strategies and utilize. tools like Lighthouse to identify and address performance.bottlenecks.",
   },
