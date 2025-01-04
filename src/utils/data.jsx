@@ -35,8 +35,8 @@ export const menus = [
 export const featuredProject = [
   {
     id: 1,
-    title: "comfy store",
-    image: "/comfy.png",
+    title: "gotipmi",
+    image: "/tipmi.png",
   },
   {
     id: 2,
