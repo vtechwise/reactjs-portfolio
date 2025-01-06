@@ -17,31 +17,28 @@ const Landing = () => {
   // const bodyRef = useRef(null);
 
   useEffect(() => {
-    
-    const handleScroll=()=> {
+    const handleScroll = () => {
       const scrollThreshold = 3000;
       if (window.scrollY >= scrollThreshold) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    }
+    };
 
-       window.addEventListener("scroll", handleScroll);
-    
-   
+    window.addEventListener("scroll", handleScroll);
   }, [scroll]);
 
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior:'smooth'
-    })
+      behavior: "smooth",
+    });
   }
 
   return (
     <>
-      <section className="relative">
+      <section className="relative scrollableParentSelector">
         {/* <ScrollRestoration/> */}
         <Hero />
         <FeaturedProject />
@@ -200,7 +197,10 @@ const Landing = () => {
           </div>
         </section>
         {scroll && (
-          <div onClick={scrollToTop} className="fixed bottom-[3rem] right-[1rem] font-bold grid place-items-center rounded-md cursor-pointer h-[1.8rem] w-[1.9rem] bg-primary ">
+          <div
+            onClick={scrollToTop}
+            className="fixed bottom-[3rem] right-[1rem] font-bold grid place-items-center rounded-md cursor-pointer h-[1.8rem] w-[1.9rem] bg-primary "
+          >
             <span>
               <FaArrowUp className="fill-white" />
             </span>

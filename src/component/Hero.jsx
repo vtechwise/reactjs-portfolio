@@ -36,18 +36,34 @@ const Hero = () => {
         </div>
         <div className=" md:text-left sm:order-first flex flex-col mt-12 justify-between gap-y-24">
           <div className="text-center md:text-left">
-            <ScrollAnimation animateIn="fadeInDown" duration="1">
+            <ScrollAnimation
+              animateIn="fadeInDown"
+              duration="1"
+              animateOnce={true}
+              scrollableParentSelector="scrollableParentSelector"
+            >
               <h1 className="text-3xl  md:text-5xl  font-semibold max-w-xl capitalize">
                 building user interfaces with frontend magic
               </h1>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInUp" duration={"2"}>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              duration={"2"}
+              animateOnce={true}
+              scrollableParentSelector="scrollableParentSelector"
+            >
               <h4 className="mt-4 leading-6 max-w-[25rem] mx-auto md:mx-0 ">
                 in my code every details serves a purpose- orchestrating a
                 digital masterpiece where user experience flow seamlessly.
               </h4>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceIn" duration={"6"} delay={""}>
+            <ScrollAnimation
+              animateIn="bounceIn"
+              duration={"6"}
+              delay={""}
+              animateOnce={true}
+              scrollableParentSelector="scrollableParentSelector"
+            >
               <Link to={"/contact"}>
                 <button className="btn mt-6 btn-primary   rounded-xl text-md  md:btn-lg  ">
                   Work with me

@@ -16,13 +16,13 @@ function animationCss(index) {
   }
 }
 function duration(index) {
-   if (index === 0) {
-     return "1";
-   } else if (index === 1) {
-     return "2";
-   } else {
-     return "3";
-   }
+  if (index === 0) {
+    return "1";
+  } else if (index === 1) {
+    return "2";
+  } else {
+    return "3";
+  }
 }
 
 const Services = () => {
@@ -34,7 +34,12 @@ const Services = () => {
           const { id, title, description, icon } = service;
           return (
             <div>
-              <ScrollAnimation duration={duration(index)} animateIn={animationCss(index)}>
+              <ScrollAnimation
+                scrollableParentSelector="scrollableParentSelector"
+                duration={duration(index)}
+                animateIn={animationCss(index)}
+                animateOnce={true}
+              >
                 <article
                   key={id}
                   className="bg-base-300 border-b-[.25rem] border-primary p-6  "
