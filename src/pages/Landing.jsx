@@ -38,7 +38,7 @@ const Landing = () => {
 
   return (
     <>
-      <section className="relative scrollableParentSelector">
+      <section className="relative scrollableParentSelecto">
         {/* <ScrollRestoration/> */}
         <Hero />
         <FeaturedProject />

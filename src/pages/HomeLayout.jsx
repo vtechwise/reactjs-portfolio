@@ -8,7 +8,6 @@ import { Link, ScrollRestoration } from "react-router-dom";
 const HomeLayout = () => {
   const navigate = useNavigation();
   const isLoading = navigate.state === "loading";
-  
 
   return (
     <div className="drawer drawer-end ">
@@ -35,12 +34,9 @@ const HomeLayout = () => {
           {/* Sidebar content here */}
           {menus.map((menu) => {
             return (
-              <Link to={menu.url}>
+              <Link to={menu.url} key={menu.id}>
                 <ScrollRestoration />
-                <li
-                  className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 "
-                  key={menu.id}
-                >
+                <li className="capitalize text-xl menu-item p-4 hover:bg-primary hover:pl-6 transition-all duration-700 ">
                   {menu.text}
                 </li>
               </Link>

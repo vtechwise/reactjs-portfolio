@@ -17,11 +17,11 @@ function animationCss(index) {
 }
 function duration(index) {
   if (index === 0) {
-    return "1";
+    return 1;
   } else if (index === 1) {
-    return "2";
+    return 2;
   } else {
-    return "3";
+    return 3;
   }
 }
 
@@ -33,10 +33,9 @@ const Services = () => {
         {services.map((service, index) => {
           const { id, title, description, icon } = service;
           return (
-            <div>
+            <div key={id}>
               <ScrollAnimation
-                scrollableParentSelector="scrollableParentSelector"
-                duration={duration(index)}
+                duration={duration(Number(index))}
                 animateIn={animationCss(index)}
                 animateOnce={true}
               >
