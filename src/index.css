@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /* import "animate.css/animate.compat.css"; */
-
 
 @tailwind base;
 @tailwind components;
@@ -11,59 +10,63 @@
 
 /* COMMENT jost font family */
 body {
-    font-family: 'inter',sans-serif;
+  font-family: "inter", sans-serif;
 }
 button {
-    transition: all 0.9s linear;
+  transition: all 0.9s linear;
 }
 
 p {
-    font-family: 'lato', sans-serif;
-    font-size: .9rem;
+  font-family: "lato", sans-serif;
+  font-size: 0.9rem;
 }
 
 @layer components {
-    .align-element {
-        @apply max-w-[85rem] px-4 mx-auto 
-    }
-    .section-margin {
-        @apply my-20
-    }
+  .align-element {
+    @apply max-w-[85rem] px-4 mx-auto;
+  }
+  .section-margin {
+    @apply my-20;
+  }
 }
-
+ul {
+  list-style-position: inside;
+}
+li {
+  list-style-type: disc;
+}
 .stack-container {
-    display: grid;
-    justify-items: start;
-    grid-template-columns: max-content 1fr !important;
-    /* grid-template-rows: 20px max-content; */
-    grid-template-areas:
-    'a b b'
-    'a b b ';
+  display: grid;
+  justify-items: start;
+  grid-template-columns: max-content 1fr !important;
+  /* grid-template-rows: 20px max-content; */
+  grid-template-areas:
+    "a b b"
+    "a b b ";
 }
 .stack-title {
   grid-area: a;
   align-self: start;
-
 }
 .stack-text {
-    grid-area: b;
-    justify-self: start;
+  grid-area: b;
+  justify-self: start;
 }
 
 .answer {
-    animation: slide-top ease-in-out 0.3s;
+  animation: slide-top ease-in-out 0.3s;
 }
 .faq {
-transition: height 3s  ease-in ;
+  transition: height 3s ease-in;
 }
 @keyframes slide-top {
-    0% {
-        -webkit-transform: translateY(100px);
-        transform: translateY(-100px);
-    }
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(-100px);
+  }
 
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

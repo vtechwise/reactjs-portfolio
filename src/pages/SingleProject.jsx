@@ -54,26 +54,23 @@ const SingleProject = () => {
       <SectionTitle text={title} />
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
         <div className="grid gap-y-4  items-start lg:grid-rows-[min-content,min-content]">
-          <div className="stack-container">
-            <span className="text-md text-white stack-title capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem]">
-              stack :
-            </span>
-            <div className="stack-text">
-              {stack.map((skill, index) => {
-                return (
-                  <span className="text-lg ">
-                    {skill}
-                    {index < stack.length - 1 ? "," : " "}{" "}
-                  </span>
-                );
-              })}
-            </div>
-          </div>
           <div>
-            <span className="text-md text-whit capitalize tracking-wider bg-primary py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] text-[black]">
-              service :
-            </span>
-            <span className="text-lg capitalize"> {service}.</span>
+            <h4 className="text-lg capitalize tracking-wider  py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] font-bold">
+              service
+            </h4>
+            <span className=" capitalize"> {service}.</span>
+          </div>
+          <div className="stack-containe">
+            <h4 className="text-lg font-bold  stack-title capitalize tracking-wider  py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem]">
+              stack
+            </h4>
+            <div className="stack-text">
+              <ul>
+                {stack.map((skill, index) => {
+                  return <li className="text-lg  ">{skill}</li>;
+                })}
+              </ul>
+            </div>
           </div>
         </div>
         <div className="grid gap-y-2">
