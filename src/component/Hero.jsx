@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Hero = () => {
-  const resumeUrl = "victor-olabisi cv.pdf";
+  const resumeUrl = "OGUNTAYO VICTOR RESUME.pdf";
   return (
     <>
       <div
