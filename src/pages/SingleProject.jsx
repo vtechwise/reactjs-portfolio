@@ -55,16 +55,16 @@ const SingleProject = () => {
       <div className="grid gap-y-16 md:grid-cols-2 gap-x-10">
         <div className="grid gap-y-4  items-start lg:grid-rows-[min-content,min-content]">
           <div>
-            <h4 className="text-lg capitalize tracking-wider  py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem] font-bold">
+            <h4 className="text-lg capitalize tracking-wider   rounded-sm mr-[.5rem] font-bold">
               service
             </h4>
             <span className=" capitalize"> {service}.</span>
           </div>
           <div className="stack-containe">
-            <h4 className="text-lg font-bold  stack-title capitalize tracking-wider  py-[0.25rem] px-[.5rem] rounded-sm mr-[.5rem]">
+            <h4 className="text-lg font-bold  stack-title capitalize tracking-wider   rounded-sm mr-[.5rem]">
               stack
             </h4>
-            <div className="stack-text">
+            <div className="">
               <ul>
                 {stack.map((skill, index) => {
                   return <li className="text-lg  ">{skill}</li>;
