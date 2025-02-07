@@ -11,6 +11,7 @@ import { TERipple } from "tw-elements-react";
 import { useEffect, useRef, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { MdSevereCold } from "react-icons/md";
+import Certifications from "../component/Certifications";
 
 const Landing = () => {
   const [scroll, setScroll] = useState(false);
@@ -42,6 +43,7 @@ const Landing = () => {
         {/* <ScrollRestoration/> */}
         <Hero />
         <FeaturedProject />
+        <Certifications/>
         <Skills />
         <Services />
         <section className="section-margin">
