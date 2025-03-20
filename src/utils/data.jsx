@@ -114,6 +114,13 @@ export const singleProjects = [
     service: "website development",
   },
   {
+    title: "kukeat",
+    description:
+      "Kukeat is a modern and user-friendly food discovery and ordering platform designed to enhance the dining experience. Built using React.js and Next.js, the website offers seamless navigation, fast performance, and an intuitive interface for users to explore a variety of cuisines, discover new restaurants, and place orders effortlessly. With optimized server-side rendering (SSR) and static site generation (SSG) for improved SEO and performance, Kukeat ensures a smooth and engaging user experience. The platform integrates responsive design, dynamic data fetching, and efficient state management to provide a reliable and scalable food ordering solution.",
+    stack: ["react.js", "redux", 'Next.js', "Tailwindcss", "react-router"],
+    service: "website development",
+  },
+  {
     title: "nexter project",
     description:
       "The ReactJS Static Website, meticulously crafted to hone my skills in component-based architecture and maximize code reusability, is an exemplary showcase of streamlined design and efficient development. Built with ReactJS and styled using CSS/SCSS, this project places a strong emphasis on modular components, allowing for seamless reuse and maintenance. The website features a clean and responsive user interface, with each section carefully implemented as a reusable React component, showcasing the power of component-driven development. Leveraging the React ecosystem, the project demonstrates the efficiency of managing state and rendering content dynamically while maintaining a cohesive and visually appealing design. This endeavor not only exemplifies mastery in React and CSS/SCSS but also serves as a testament to the commitment to best practices in frontend development, ensuring scalability, maintainability, and a delightful user experience.",
