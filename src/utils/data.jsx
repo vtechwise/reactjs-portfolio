@@ -117,7 +117,9 @@ export const singleProjects = [
     title: "kukeat",
     description:
       "Kukeat is a modern and user-friendly food discovery and ordering platform designed to enhance the dining experience. Built using React.js and Next.js, the website offers seamless navigation, fast performance, and an intuitive interface for users to explore a variety of cuisines, discover new restaurants, and place orders effortlessly. With optimized server-side rendering (SSR) and static site generation (SSG) for improved SEO and performance, Kukeat ensures a smooth and engaging user experience. The platform integrates responsive design, dynamic data fetching, and efficient state management to provide a reliable and scalable food ordering solution.",
-    stack: ["react.js", "redux", 'Next.js', "Tailwindcss", "react-router"],
+    stack: ["react.js", "redux", "Next.js", "Tailwindcss", "react-router"],
+    url: "https://kukeat.com/",
+
     service: "website development",
   },
   {
